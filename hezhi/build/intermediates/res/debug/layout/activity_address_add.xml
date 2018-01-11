@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" 
+    >
+ 
+    <ScrollView
+         android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/bg_gray"
+    android:visibility="visible"
+    >
+    <LinearLayout 
+         android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+   
+    <LinearLayout 
+        android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/margin"
+    android:paddingLeft="@dimen/margin"
+    android:paddingRight="@dimen/margin"
+    android:gravity="center_vertical"
+    android:focusable="true" 
+    android:focusableInTouchMode="true" 
+    >
+        <TextView 
+             android:layout_width="60dp"
+    		android:layout_height="wrap_content"
+    		android:textColor="@color/text_main"
+    		android:textSize="@dimen/text_size_normal"
+    		android:text="@string/address_user"
+            />
+        
+        <EditText 
+            android:id="@+id/edit_addr_name"
+             android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:hint="@string/address_user_input"
+    		android:textColorHint="@color/hint"
+    		android:textSize="@dimen/text_size_normal"
+    		android:background="@color/white"
+    		android:layout_marginLeft="@dimen/margin"
+    		 android:textCursorDrawable="@drawable/shape_editext_cursor"
+            />
+    </LinearLayout>
+    
+    <include layout="@layout/view_line_horizontal" 
+         />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/margin"
+    android:paddingRight="@dimen/margin"
+    android:gravity="center_vertical"
+    >
+        <TextView 
+             android:layout_width="60dp"
+    		android:layout_height="wrap_content"
+    		android:textColor="@color/text_main"
+    		android:textSize="@dimen/text_size_normal"
+    		android:text="@string/address_phone"
+            />
+        
+        <EditText 
+            android:id="@+id/edit_addr_phone"
+             android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:hint="@string/address_phone_input"
+    		android:textColorHint="@color/hint"
+    		android:textSize="@dimen/text_size_normal"
+    		android:background="@color/white"
+    		android:layout_marginLeft="@dimen/margin"
+    		android:inputType="phone"
+    		 android:textCursorDrawable="@drawable/shape_editext_cursor"
+            />
+    </LinearLayout>
+    
+     <include layout="@layout/view_line_horizontal" 
+         />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/margin"
+    android:paddingRight="@dimen/margin"
+    android:gravity="center_vertical"
+    >
+        <TextView 
+             android:layout_width="60dp"
+    		android:layout_height="wrap_content"
+    		android:textColor="@color/text_main"
+    		android:textSize="@dimen/text_size_normal"
+    		android:text="@string/address_simple"
+            />
+        
+        <TextView 
+            android:id="@+id/edit_addr_simple"
+             android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:hint="@string/address_simple_inpuy"
+    		android:textColorHint="@color/hint"
+    		android:textSize="@dimen/text_size_normal"
+    		android:background="@color/white"
+    		android:layout_marginLeft="@dimen/margin"
+    		android:gravity="center_vertical"
+            />
+    </LinearLayout>
+    
+     <include layout="@layout/view_line_horizontal" 
+         />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/margin"
+    android:paddingRight="@dimen/margin"
+    android:gravity="center_vertical"
+    >
+        <TextView 
+             android:layout_width="60dp"
+    		android:layout_height="wrap_content"
+    		android:textColor="@color/text_main"
+    		android:textSize="@dimen/text_size_normal"
+    		android:text="@string/address_detail"
+            />
+        
+        <EditText 
+            android:id="@+id/edit_addr_detail"
+             android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:hint="@string/address_detail_input"
+    		android:textColorHint="@color/hint"
+    		android:textSize="@dimen/text_size_normal"
+    		android:background="@color/white"
+    		android:layout_marginLeft="@dimen/margin"
+    		 android:textCursorDrawable="@drawable/shape_editext_cursor"
+            />
+    </LinearLayout>
+    
+    <include layout="@layout/view_line_horizontal" 
+         />
+    
+    <RelativeLayout 
+          android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+     android:paddingLeft="@dimen/margin"
+    android:paddingRight="@dimen/margin"
+    android:paddingTop="@dimen/margin"
+    android:paddingBottom="@dimen/margin"
+    >
+    <LinearLayout 
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:orientation="vertical"
+    >
+        <TextView 
+             android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textColor="@color/text_main"
+    		android:textSize="@dimen/text_size_normal"
+    		android:text="@string/address_defout"
+            />
+        <TextView 
+             android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textColor="@color/text_tutor"
+    		android:textSize="@dimen/text_size_small"
+    		android:text="@string/address_defout_info"
+            />
+    </LinearLayout>
+    
+    <CheckBox
+        android:id="@+id/check_addr_defaut"
+        android:layout_width="22dp"
+    	android:layout_height="22dp"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentRight="true"
+    	android:button="@drawable/selector_check"
+        />
+    </RelativeLayout>
+    
+    <TextView
+            android:id="@+id/text_addr_save"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="@dimen/bottom_bar"
+            android:background="@drawable/selector_btn_submit"
+            android:gravity="center"
+            android:text="@string/address_saveAndUsed"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_bigger"
+             />
+    
+     </LinearLayout>
+     </ScrollView>
+</LinearLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/activity_address_add.xml -->

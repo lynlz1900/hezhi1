@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/v_list_heiht"
+            android:layout_margin="@dimen/margin"
+            android:background="@color/bg_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:text="手机号"
+                android:textColor="@color/text_main" />
+
+            <EditText
+                android:id="@+id/phone_et"
+                style="@style/EditTextStyle"
+                android:layout_weight="2"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLength="11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/v_list_heiht"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/bg_gray"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:text="验证码"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <EditText
+                    android:id="@+id/identifying_code_et"
+                    style="@style/EditTextStyle"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:maxLength="6" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/identifying_code_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="1"
+                android:background="@drawable/selector_redtogray_nocorner"
+                android:button="@null"
+                android:gravity="center"
+                android:text="验证码"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login_bt"
+            style="@style/submiButtonStyle"
+            android:text="@string/bind_phone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:text="提示：您是通过第三方登录盒知APP，为了保障您的账号和资金安全，建议您绑定手机号"
+            android:textColor="@color/text_tutor"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/activity_bind_phone.xml -->

@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/attrs.xml -->
+    <eat-comment/>
+    <attr format="reference" name="SwipeBackLayoutStyle"/>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/vpi__attrs.xml -->
+    <eat-comment/>
+    <attr format="boolean" name="centered"/>
+    <attr format="color" name="selectedColor"/>
+    <attr format="dimension" name="strokeWidth"/>
+    <attr format="color" name="unselectedColor"/>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/vpi__defaults.xml -->
+    <eat-comment/>
+    <bool name="default_circle_indicator_centered">true</bool>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <bool name="default_line_indicator_centered">true</bool>
+    <bool name="default_title_indicator_selected_bold">true</bool>
+    <bool name="default_underline_indicator_fades">true</bool>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/build/intermediates/exploded-aar/workspaece1/main/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <bool name="pickerview_customTextSize">true</bool>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="base">#ff8b26</color>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/build/intermediates/exploded-aar/workspaece1/main/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <color name="bgColor_overlay">#60000000</color>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="bg_gray">#F6F6F6</color>
+    <color name="bg_redbag">#DC4C3F</color>
+    <color name="bg_transparency_black">#77000000</color>
+    <color name="bg_transparency_white">#88ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#3399FF</color>
+    <color name="btn_base_press">#FF6600</color>
+    <color name="btn_gray_press">#E5E5E5</color>
+    <color name="btn_green_press">#8ABB45</color>
+    <color name="btn_no_press">#E1E1E1</color>
+    <color name="btn_red">#F74D4D</color>
+    <color name="btn_red_press">#E24D4D</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/vpi__defaults.xml -->
+    <eat-comment/>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <color name="default_line_indicator_selected_color">#FF33B5E5</color>
+    <color name="default_line_indicator_unselected_color">#FFBBBBBB</color>
+    <color name="default_title_indicator_footer_color">#FF33B5E5</color>
+    <color name="default_title_indicator_selected_color">#FFFFFFFF</color>
+    <color name="default_title_indicator_text_color">#BBFFFFFF</color>
+    <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="green">#37ad63</color>
+    <color name="hint">#B5B5B5</color>
+    <color name="linecolor">#E5E5E5</color>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/build/intermediates/exploded-aar/workspaece1/main/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="red">#D93636</color>
+    <color name="redbug_text">#f7dd94</color>
+    <color name="result_view">#b0000000</color>
+    <color name="text_important">#F74D4D</color>
+    <color name="text_main">#333333</color>
+    <color name="text_normal">#88000000</color>
+    <color name="text_red">#d93636</color>
+    <color name="text_tip">#B3B3B3</color>
+    <color name="text_tutor">#999999</color>
+    <color name="text_tutor2">#666666</color>
+    <color name="toast_color">#39454D</color>
+    <color name="transparency">#00000000</color>
+    <color name="transparency_base">#22ff8b26</color>
+    <color name="transparency_gray">#99F6F6F6</color>
+    <color name="transparency_mask">#BB000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/vpi__colors.xml -->
+    <eat-comment/>
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="white">#FFFFFF</color>
+    <declare-styleable name="CircleButtonView"><attr format="integer" name="minTime"/><attr format="integer" name="maxTime"/><attr format="color" name="progressColor"/><attr format="dimension" name="progressWidth"/></declare-styleable>
+    <declare-styleable name="CirclePageIndicator"><attr name="centered"/><attr format="color" name="fillColor"/><attr format="color" name="pageColor"/><attr name="android:orientation"/><attr format="dimension" name="radius"/><attr format="boolean" name="snap"/><attr format="color" name="strokeColor"/><attr name="strokeWidth"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="CustomImageView"><attr format="boolean" name="circle"/><attr format="dimension" name="cradius"/></declare-styleable>
+    <declare-styleable name="LinePageIndicator"><attr name="centered"/><attr name="unselectedColor"/><attr name="selectedColor"/><attr format="dimension" name="lineWidth"/><attr name="strokeWidth"/><attr format="dimension" name="gapWidth"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="MovieRecorderView"><attr format="integer" name="record_width"/><attr format="integer" name="record_height"/><attr format="boolean" name="is_open_camera"/><attr format="boolean" name="record_max_time"/></declare-styleable>
+    <declare-styleable name="RatioLayout"><attr format="float" name="picRatio"/></declare-styleable>
+    <declare-styleable name="SwipeBackLayout"><attr format="dimension" name="edge_size"/><attr name="edge_flag"><enum name="left" value="0"/><enum name="right" value="1"/><enum name="bottom" value="2"/><enum name="all" value="3"/></attr><attr format="reference" name="shadow_left"/><attr format="reference" name="shadow_right"/><attr format="reference" name="shadow_bottom"/></declare-styleable>
+    <declare-styleable name="Theme"><attr format="reference" name="customImageViewStyle"/></declare-styleable>
+    <declare-styleable name="TitlePageIndicator"><attr format="dimension" name="clipPadding"/><attr format="color" name="footerColor"/><attr format="dimension" name="footerLineHeight"/><attr name="footerIndicatorStyle"><enum name="none" value="0"/><enum name="triangle" value="1"/><enum name="underline" value="2"/></attr><attr format="dimension" name="footerIndicatorHeight"/><attr format="dimension" name="footerIndicatorUnderlinePadding"/><attr format="dimension" name="footerPadding"/><attr name="linePosition"><enum name="bottom" value="0"/><enum name="top" value="1"/></attr><attr name="selectedColor"/><attr format="boolean" name="selectedBold"/><attr name="android:textColor"/><attr name="android:textSize"/><attr format="dimension" name="titlePadding"/><attr format="dimension" name="topPadding"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="UnderlinePageIndicator"><attr format="boolean" name="fades"/><attr format="integer" name="fadeDelay"/><attr format="integer" name="fadeLength"/><attr name="selectedColor"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="ViewPagerIndicator"><attr format="reference" name="vpiCirclePageIndicatorStyle"/><attr format="reference" name="vpiIconPageIndicatorStyle"/><attr format="reference" name="vpiLinePageIndicatorStyle"/><attr format="reference" name="vpiTitlePageIndicatorStyle"/><attr format="reference" name="vpiTabPageIndicatorStyle"/><attr format="reference" name="vpiUnderlinePageIndicatorStyle"/></declare-styleable>
+    <declare-styleable name="pickerview"><attr name="pickerview_gravity"><enum name="center" value="17"/><enum name="left" value="3"/><enum name="right" value="5"/></attr><attr format="dimension" name="pickerview_textSize"/><attr format="color" name="pickerview_textColorOut"/><attr format="color" name="pickerview_textColorCenter"/><attr format="color" name="pickerview_dividerColor"/></declare-styleable>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="bottom_bar">48dp</dimen>
+    <dimen name="circlecornners">15dp</dimen>
+    <dimen name="circlecornners2">30dp</dimen>
+    <dimen name="commonconners">5dp</dimen>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/vpi__defaults.xml -->
+    <eat-comment/>
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_line_indicator_gap_width">4dp</dimen>
+    <dimen name="default_line_indicator_line_width">12dp</dimen>
+    <dimen name="default_line_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_title_indicator_clip_padding">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_height">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_underline_padding">20dp</dimen>
+    <dimen name="default_title_indicator_footer_line_height">2dp</dimen>
+    <dimen name="default_title_indicator_footer_padding">7dp</dimen>
+    <dimen name="default_title_indicator_text_size">15dp</dimen>
+    <dimen name="default_title_indicator_title_padding">5dp</dimen>
+    <dimen name="default_title_indicator_top_padding">7dp</dimen>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="dialogconners">5dp</dimen>
+    <dimen name="global_screenshot_bg_padding">20dp</dimen>
+    <dimen name="icon_header">72dp</dimen>
+    <dimen name="icon_height">22dp</dimen>
+    <dimen name="image_height">200dp</dimen>
+    <dimen name="image_with">300dp</dimen>
+    <dimen name="margin">12dp</dimen>
+    <dimen name="margin1">6dp</dimen>
+    <dimen name="margin2">16dp</dimen>
+    <dimen name="margin3">24dp</dimen>
+    <dimen name="margin4">8dp</dimen>
+    <dimen name="noconners">0dp</dimen>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/build/intermediates/exploded-aar/workspaece1/main/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="pickerview_textsize">18sp</dimen>
+    <dimen name="pickerview_topbar_btn_textsize">16sp</dimen>
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <dimen name="pickerview_topbar_paddingleft">10dp</dimen>
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">16sp</dimen>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="popupwindow_red_with">120dp</dimen>
+    <dimen name="popuwindow_height">350dp</dimen>
+    <dimen name="popuwindow_item_height">35dp</dimen>
+    <dimen name="text_size_bigger">16dp</dimen>
+    <dimen name="text_size_normal">14dp</dimen>
+    <dimen name="text_size_small">12dp</dimen>
+    <dimen name="text_title">18dp</dimen>
+    <dimen name="title_bar">44dp</dimen>
+    <dimen name="v_heiht">78dp</dimen>
+    <dimen name="v_line_height">1px</dimen>
+    <dimen name="v_list_heiht">44dp</dimen>
+    <dimen name="v_list_heiht_icon">48dp</dimen>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="about_version_code" type="id">false</item>
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <item name="gridview" type="id"/>
+    <item name="high_light_view" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <item name="search_book_contents_failed" type="id"/>
+    <item name="search_book_contents_succeeded" type="id"/>
+    <item name="split" type="id">false</item>
+    <item name="webview" type="id"/>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/build/intermediates/exploded-aar/workspaece1/main/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <integer name="animation_default_duration">300</integer>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/vpi__defaults.xml -->
+    <eat-comment/>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <integer name="default_title_indicator_footer_indicator_style">2</integer>
+    <integer name="default_title_indicator_line_position">0</integer>
+    <integer name="default_underline_indicator_fade_delay">300</integer>
+    <integer name="default_underline_indicator_fade_length">400</integer>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="INIT_ERROR">Error</string>
+    <string name="INIT_ERROR_DEVICE_NOT_SUPPORTED">Failed to initialize Vuforia. This device is not supported.</string>
+    <string name="INIT_ERROR_NO_CAMERA_ACCESS">Failed to initialize Vuforia. Camera not accessible</string>
+    <string name="INIT_LICENSE_ERROR_CANCELED_KEY">This app license key has been canceled and may no longer be used. Please get a new license key.</string>
+    <string name="INIT_LICENSE_ERROR_INVALID_KEY">Invalid Key used. Please make sure you are using a valid Vuforia App Key.</string>
+    <string name="INIT_LICENSE_ERROR_MISMATCH_KEY">Vuforia App key is not valid for this product. Please get a valid key, by logging into your account at developer.vuforia.com and choosing the right product type during project creation.</string>
+    <string name="INIT_LICENSE_ERROR_MISSING_KEY">Vuforia App key is missing. Please get a valid key, by logging into your account at developer.vuforia.com and creating a new project.</string>
+    <string name="INIT_LICENSE_ERROR_NO_NETWORK_PERMANENT">No network available. Please make sure you are connected to the Internet.</string>
+    <string name="INIT_LICENSE_ERROR_NO_NETWORK_TRANSIENT">Unable to contact server. Please try again later.</string>
+    <string name="INIT_LICENSE_ERROR_PRODUCT_TYPE_MISMATCH">Vuforia App key is not valid for this product. Please get a valid key, by logging into your account at developer.vuforia.com and choosing the right product type during project creation.</string>
+    <string name="INIT_LICENSE_ERROR_UNKNOWN_ERROR">Failed to initialize Vuforia.</string>
+    <string name="about">关于</string>
+    <string name="about_hezhi">关于盒知</string>
+    <string name="about_me">个人中心</string>
+    <string name="about_us">关于我们</string>
+    <string name="about_us_desc">\t\t\t\t盒知是一款让消费者安心购物的APP软件，帮您轻松识别产品可信度PV值，产品质量溯源，做到先查后买，放心购物！\n\t\t\t\tPV=Production Value 产品生命值应用RFID技术解决商品真假、可靠性问题、物权鉴定及交易行为鉴定的一套可信认证体系，最终的结果以PV值体现出来</string>
+    <string name="account_safe">账户与安全</string>
+    <string name="action_settings">Settings</string>
+    <string name="address">收货地址</string>
+    <string name="address_add">新建收货地址</string>
+    <string name="address_add_fail">收货地址新增失败</string>
+    <string name="address_add_success">新建收货地址成功</string>
+    <string name="address_create">新建地址</string>
+    <string name="address_default">默认</string>
+    <string name="address_defout">设为默认地址</string>
+    <string name="address_defout_info">注：每次下单时会使用该地址</string>
+    <string name="address_delete">删除</string>
+    <string name="address_delete_fail">收货地址删除失败</string>
+    <string name="address_delete_istrue">是否确认删除该地址</string>
+    <string name="address_delete_success">删除成功</string>
+    <string name="address_detail">详细地址</string>
+    <string name="address_detail_input">填写街道、楼牌号等</string>
+    <string name="address_detail_input_isnull">请填写详细地址信息</string>
+    <string name="address_detail_input_long">详细地址最多五十个字符</string>
+    <string name="address_edit">编辑收货地址</string>
+    <string name="address_edit_fail">收货地址编辑失败</string>
+    <string name="address_edit_success">编辑收货地址成功</string>
+    <string name="address_input">请填写收货人信息</string>
+    <string name="address_isnull">收货地址信息为空</string>
+    <string name="address_phone">联系方式</string>
+    <string name="address_phone_input">请填写收货人联系电话</string>
+    <string name="address_phone_input_iserror">手机号格式不对</string>
+    <string name="address_saveAndUsed">保存并使用</string>
+    <string name="address_simple">所在地区</string>
+    <string name="address_simple_input_isnull">所在地区信息为空</string>
+    <string name="address_simple_inpuy">选择地区</string>
+    <string name="address_user">收货人</string>
+    <string name="address_user_input">请填写收货人姓名</string>
+    <string name="address_user_input_long">收货人姓名最多十个字符</string>
+    <string name="agian_design">重新设计</string>
+    <string name="amazon">亚马逊</string>
+    <string name="app_name">盒知</string>
+    <string name="ar_interact">AR互动</string>
+    <string name="area">地区</string>
+    <string name="article_list">文章列表</string>
+    <string name="article_more">文章详情</string>
+    <string name="article_shared">分享了一篇文章</string>
+    <string name="authorization_code">授权码</string>
+    <string name="authorization_code_empty">无效标签,没有查到此产品!</string>
+    <string name="back">back</string>
+    <string name="back_tip">真的要放弃编辑吗？所有设计进度都将丢失</string>
+    <string name="baishi">百世</string>
+    <string name="band_guanzhu">品牌•关注</string>
+    <string name="band_live">品牌直播</string>
+    <string name="base_pv_value">基准PV值：</string>
+    <string name="bathNo">产品批次</string>
+    <string name="bind_phone">绑定手机号</string>
+    <string name="bind_phone_tip">领取红包需要绑定手机号，是否绑定?</string>
+    <string name="bind_social">社交账号绑定</string>
+    <string name="bind_wechat_tip">"微信搜索“盒知”公众号关注成功后会以微信红包发放，或者保存以下二维码，通过微信识别关注盒知公众号"</string>
+    <string name="blue_conect_sucess_tips">设备连接成功!\n请将蓝牙吊坠靠近标签特定区域!</string>
+    <string name="blue_version_low_tips">系统版本较低，不支持蓝牙4.0，请升级至4.3及以上系统</string>
+    <string name="business_name">商户名称</string>
+    <string name="button_OK">OK</string>
+    <string name="buy">品牌直播</string>
+    <string name="buy_direct">直接购买</string>
+    <string name="buy_now">立即购买</string>
+    <string name="camera_permission_tip">相机权限未开启，请到设置-应用-盒知中开启相机权限</string>
+    <string name="cancel">取消</string>
+    <string name="canncel_update">再按一次返回，取消升级</string>
+    <string name="cash_detail">零钱明细</string>
+    <string name="change_detail">零钱明细</string>
+    <string name="change_phone">更换手机号</string>
+    <string name="check">盘点</string>
+    <string name="check_update">检查更新</string>
+    <string name="city">市</string>
+    <string name="click_camera">点击扫描商品</string>
+    <string name="click_two">再按一次返回退出应用</string>
+    <string name="close_tv">关闭</string>
+    <string name="collection">收藏</string>
+    <string name="comment">评论</string>
+    <string name="commodity">商品</string>
+    <string name="commodity_custom">商品定制</string>
+    <string name="commodity_custom_pre">商品定制</string>
+    <string name="commodity_delete">该商品已下架!</string>
+    <string name="commodity_design">定制设计</string>
+    <string name="commodity_detail">商品详情</string>
+    <string name="commodity_is_buyover">该商品只能购买一次，您不能再购买了</string>
+    <string name="commodity_isnull">商品信息为空</string>
+    <string name="commodity_pre">预览</string>
+    <string name="commodity_price">商品价格</string>
+    <string name="commodity_select">选择定制商品</string>
+    <string name="company">Copyright©2017 深圳市鑫云悟空科技有限公司</string>
+    <string name="company2">Copyright©2017 鑫云悟空</string>
+    <string name="company_name">生产厂商</string>
+    <string name="confidence_level">产品体征值</string>
+    <string name="confirm">确认</string>
+    <string name="connect_blue">连接蓝牙</string>
+    <string name="connecting_device">正在连接设备...</string>
+    <string name="contact_us">联系我们</string>
+    <string name="copy">复制</string>
+    <string name="count_total">总计</string>
+    <string name="credible_zero">需深入查验</string>
+    <string name="cumstom_preview">定制信息预览</string>
+    <string name="cumtom">定制信息</string>
+    <string name="currentPV">实测PV值</string>
+    <string name="custom">定制信息</string>
+    <string name="custom_delete">该商品已下架!</string>
+    <string name="custom_go_on">继续购买</string>
+    <string name="customiation">定制</string>
+    <string name="customiation_delete_fail">定制删除失败</string>
+    <string name="customiation_delete_success">定制已删除</string>
+    <string name="customization_isdelete_true">是否删除该定制</string>
+    <string name="data_get_fail">数据加载失败</string>
+    <string name="day">日</string>
+    <string name="ddd_introduce">3D说明书</string>
+    <string name="debang">德邦</string>
+    <string name="delete">删除记录</string>
+    <string name="delete_pic">要删除此照片吗?</string>
+    <string name="delete_tip">是否删除这条记录</string>
+    <string name="delete_video">要删除此视频吗?</string>
+    <string name="detail">详细信息</string>
+    <string name="detection_result">查询结果</string>
+    <string name="device_disconnect">设备断开链接!</string>
+    <string name="diconnect_blue">断开蓝牙</string>
+    <string name="distinguish">鉴真</string>
+    <string name="empty_bag_tips">好可惜，没有戳中有奖红包</string>
+    <string name="ems">EMS</string>
+    <string name="express_info_error">快递公司或运单编号数据异常</string>
+    <string name="express_no">运单号：</string>
+    <string name="express_number">快递单号：</string>
+    <string name="express_query">快递查询</string>
+    <string name="express_view">查看物流</string>
+    <string name="express_view_isfail">查看物流信息失败</string>
+    <string name="express_view_isnull">无物流信息</string>
+    <string name="fail">检验未通过！</string>
+    <string name="fail_order">下单失败</string>
+    <string name="fail_pay">支付失败</string>
+    <string name="fail_pay2">付款失败</string>
+    <string name="fail_pay_info">请在下单后24小时内完成付款\n否则订单会被系统取消</string>
+    <string name="fast">快捷</string>
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_sucess">反馈成功</string>
+    <string name="feedback_suggestion">反馈建议</string>
+    <string name="female">女</string>
+    <string name="find">发现</string>
+    <string name="find_new_version">发现新的版本，是否升级？</string>
+    <string name="five_minute">请选择小于5分钟的视频</string>
+    <string name="full_score">各项满分100</string>
+    <string name="function_introduce">功能介绍</string>
+    <string name="game_center">益趣互动</string>
+    <string name="get_cash_sucess">提现成功</string>
+    <string name="get_crash">提现</string>
+    <string name="go_custom">去定制</string>
+    <string name="go_design">去设计</string>
+    <string name="godhide_model">调试模式</string>
+    <string name="guide">指引页面</string>
+    <string name="guide1">第一个引导页</string>
+    <string name="guide2">第二个引导页</string>
+    <string name="guide3">第三个引导页</string>
+    <string name="guotong">国通</string>
+    <string name="hezhi">盒知</string>
+    <string name="hezhi_foucus">盒知看点</string>
+    <string name="hezhi_sale">盒知直购</string>
+    <string name="i_know">我知道了</string>
+    <string name="image_sample">效果图</string>
+    <string name="image_select_cover">设为封面</string>
+    <string name="image_setting_cover">上传图片</string>
+    <string name="image_upload_cover_iserror">请选择一张作为封面图</string>
+    <string name="image_upload_iserror">您还未添加完图片，三张必须全部添加</string>
+    <string name="info_company_name">公司名称</string>
+    <string name="info_company_name_input">请选择公司名称</string>
+    <string name="info_upload">上传信息</string>
+    <string name="info_user_name">姓名</string>
+    <string name="info_user_name_input">请输入姓名</string>
+    <string name="input_text">输入文字</string>
+    <string name="install">安装</string>
+    <string name="instorage">入库</string>
+    <string name="introduce_info">1.一个滤灭假货的直购互动平台：\n查假货购真货全程追溯 智能签收\n2.一边玩，一边赚钱：\n查真伪能赚钱 ，互动能赚钱，分享也能赚钱\n3.让每个驰名品牌都能成为跨界广告平台：\n盒知传媒=第一媒体+第五媒体=第六媒体.\n4.盒知+OTFT，快速实现酒、茶、大米产业物联网\n5.盒知APP实现物联网电商直购和品牌竞价排名\n6.盒知APP实现名片视频自助广告与社交</string>
+    <string name="invite_friend">邀请好友</string>
+    <string name="jd">京东</string>
+    <string name="let_me_think">我再想想</string>
+    <string name="little_video">请选择小于20M的视频</string>
+    <string name="live_comment">评论</string>
+    <string name="live_sure">确认要离开收银台？</string>
+    <string name="live_tip">下单后24小时内未完成支付将被取消，请尽快支付</string>
+    <string name="loading">正在下载...</string>
+    <string name="location_is_close">手机定位权限未开启</string>
+    <string name="location_is_fail">定位失败,请检查应用是否拥有定位权限</string>
+    <string name="login">登录</string>
+    <string name="login_again">重新登录</string>
+    <string name="login_overdue">登录过期</string>
+    <string name="login_phone_tip">您还未登录，请先登录</string>
+    <string name="login_push">用户在其他设备上登录</string>
+    <string name="logistics_company">公司</string>
+    <string name="logout">退出登录</string>
+    <string name="logstics">物流信息</string>
+    <string name="lzy_code">量子云码</string>
+    <string name="lzy_code_tip">将量子云码放入框内，即可扫描</string>
+    <string name="main_page">主页</string>
+    <string name="male">男</string>
+    <string name="maotai_market">商城</string>
+    <string name="market">商城</string>
+    <string name="me">我的</string>
+    <string name="model_area">定\n\n制\n\n区\n\n域</string>
+    <string name="money_total">合计：</string>
+    <string name="money_type">¥</string>
+    <string name="money_unit">元</string>
+    <string name="month">月</string>
+    <string name="msg_center">消息中心</string>
+    <string name="msg_detail">消息详情</string>
+    <string name="my_attention">关注</string>
+    <string name="my_attetion">我的关注</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="my_customization">我的定制</string>
+    <string name="my_guanzhu">我的•关注</string>
+    <string name="my_scan">我的•扫描</string>
+    <string name="my_wallet">我的钱包</string>
+    <string name="net_error">检查网络是否可用</string>
+    <string name="next">下一步</string>
+    <string name="nfc_distinguish">NFC鉴真</string>
+    <string name="nfc_scan">NFC直购</string>
+    <string name="nfc_trace">NFC</string>
+    <string name="nickname">昵称</string>
+    <string name="nickname_empty">请输入昵称</string>
+    <string name="nickname_error">昵称不能含有表情</string>
+    <string name="no">否</string>
+    <string name="no_emoji">不能含有表情</string>
+    <string name="no_format">不支持此格式类型的视频</string>
+    <string name="no_more_data">没有更多数据了</string>
+    <string name="no_nfc">该设备不支持NFC</string>
+    <string name="no_product">没有对应商品</string>
+    <string name="no_templet">暂无模板</string>
+    <string name="nodesign_tips">您尚未进行任何设计哦</string>
+    <string name="not_find_device">未找到设备!\n请检查吊坠和手机蓝牙是否开启！</string>
+    <string name="not_suggest_buy">不建议购买</string>
+    <string name="oneyuan_distinguish">一元鉴真</string>
+    <string name="onloading">加载中...</string>
+    <string name="open_nfc">NFC功能没打开，请打开</string>
+    <string name="operater">操作人</string>
+    <string name="order">订单</string>
+    <string name="order_buy_again">再次购买</string>
+    <string name="order_buy_complete">确认收货</string>
+    <string name="order_buy_to">去支付</string>
+    <string name="order_call_service">联系卖家</string>
+    <string name="order_cancel">取消订单</string>
+    <string name="order_cancel_fail">订单取消失败</string>
+    <string name="order_cancel_isnull">请选择原因</string>
+    <string name="order_cancel_reason">请选择取消订单的原因</string>
+    <string name="order_cancel_reason01">我不想买了</string>
+    <string name="order_cancel_reason02">商品价格较贵</string>
+    <string name="order_cancel_reason03">付款遇到困难(如余额不足,不知道怎么付款等)</string>
+    <string name="order_cancel_reason04">收货信息有误</string>
+    <string name="order_cancel_reason05">发货信息有误</string>
+    <string name="order_cancel_reason06">其他原因</string>
+    <string name="order_cancel_success">订单已取消</string>
+    <string name="order_confirm">确认订单</string>
+    <string name="order_customization">定制订单</string>
+    <string name="order_customization_search">定制订单搜索</string>
+    <string name="order_delete">删除订单</string>
+    <string name="order_delete_fail">订单删除失败</string>
+    <string name="order_delete_success">订单已删除</string>
+    <string name="order_detail">订单详情</string>
+    <string name="order_empty">订单为空</string>
+    <string name="order_ex_number">物流订单编号为空</string>
+    <string name="order_express_company">快递公司：</string>
+    <string name="order_express_delivertime">发货时间：</string>
+    <string name="order_express_number">运单编号：</string>
+    <string name="order_express_receivedtime">收货时间：</string>
+    <string name="order_expressnumber_copyok">复制运单编号成功</string>
+    <string name="order_fail">订单生成失败</string>
+    <string name="order_get_redbag">领取红包：</string>
+    <string name="order_id">订单编号：</string>
+    <string name="order_isdelete_true">是否删除该订单</string>
+    <string name="order_isnull">订单信息为空!</string>
+    <string name="order_isreceive_true">您是否确认收货</string>
+    <string name="order_logistics_view">查看物流</string>
+    <string name="order_pay">支付订单</string>
+    <string name="order_pay_result">付款结果</string>
+    <string name="order_receive_fail">订单确认收货失败</string>
+    <string name="order_receive_success">订单已确认收货</string>
+    <string name="order_remark">备注：</string>
+    <string name="order_review">查看订单</string>
+    <string name="order_search_islong">输入的订单编号或产品名称不能超过10个字符</string>
+    <string name="order_search_isnull">请输入订单编号或产品名称</string>
+    <string name="order_status_canceled">已取消</string>
+    <string name="order_status_obligations">待付款</string>
+    <string name="order_status_obligations_info">下单后24小时内未完成支付将被取消，请尽快支付</string>
+    <string name="order_status_received">已完成</string>
+    <string name="order_status_undelivered">待发货</string>
+    <string name="order_status_undelivered_info">请耐心等待，您的商品正在制作中</string>
+    <string name="order_status_unreceived">待收货</string>
+    <string name="order_submit">提交订单</string>
+    <string name="order_time">下单时间：</string>
+    <string name="otft_trace">OTFT</string>
+    <string name="other">标识数据</string>
+    <string name="other_info">其他信息</string>
+    <string name="outstorage">出库</string>
+    <string name="pay_again">重新付款</string>
+    <string name="pay_real">实付款</string>
+    <string name="pay_tips">重要提示：盒知不会以订单异常、系统升级为由，要求您点击任何链接进行退款操作</string>
+    <string name="pay_wx">微信支付</string>
+    <string name="pay_zhifubao">支付宝</string>
+    <string name="person_info">个人信息</string>
+    <string name="phone">手机号</string>
+    <string name="photo">拍照</string>
+    <string name="photo_crop_fail">图片裁剪失败</string>
+    <string name="photo_get_fail">图片获取失败</string>
+    <string name="photo_permission_tip">相机权限未开启，请到设置-应用-盒知中开启相机权限</string>
+    <string name="photo_video">拍摄/拍照</string>
+    <string name="photograph">拍照</string>
+    <string name="pic">图片</string>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/build/intermediates/exploded-aar/workspaece1/main/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="play_over">播放完成</string>
+    <string name="please_later">请稍候...</string>
+    <string name="post_fail">上传失败</string>
+    <string name="press_sale">点击直购</string>
+    <string name="preview">预览</string>
+    <string name="preview_pic">照片</string>
+    <string name="preview_video">视频</string>
+    <string name="prize_detail">奖品详情</string>
+    <string name="prize_get_fail">奖品领取失败</string>
+    <string name="prize_get_success">奖品领取成功</string>
+    <string name="prize_getnow">立即领取</string>
+    <string name="prize_gettime">领取时间：</string>
+    <string name="prize_list">奖品</string>
+    <string name="prize_name">奖品：</string>
+    <string name="prize_price">价值：</string>
+    <string name="prize_receicerphone">联系电话：</string>
+    <string name="prize_receive">领取奖品</string>
+    <string name="prize_receive_confirm">确认领取</string>
+    <string name="prize_receive_fail">奖品确认收货失败</string>
+    <string name="prize_receive_success">奖品确认收货成功</string>
+    <string name="prize_receiveaddr">收货地址：</string>
+    <string name="prize_receiver">收货人：</string>
+    <string name="prize_status">状态：</string>
+    <string name="prize_status_getmoney">已发放到盒知钱包</string>
+    <string name="prize_status_unpickup">待领取</string>
+    <string name="prize_time">中奖时间：</string>
+    <string name="produce_data">生产日期</string>
+    <string name="product">产品信息</string>
+    <string name="product_detail">产品详情</string>
+    <string name="product_info">产品信息</string>
+    <string name="product_main">详情信息</string>
+    <string name="product_name">产品名称</string>
+    <string name="product_size">产品规格</string>
+    <string name="promisePV">承诺PV值</string>
+    <string name="protocol">盒知服务条款</string>
+    <string name="province">省</string>
+    <string name="purchase">直购</string>
+    <string name="pv">PV值</string>
+    <string name="pv_introduce">产品PV值介绍</string>
+    <string name="pv_value">真品,PV值=</string>
+    <string name="qq_login">QQ登录</string>
+    <string name="qr_code">二维码</string>
+    <string name="qr_code_tip">将二维码放入框内，即可扫描</string>
+    <string name="qr_page">二维码扫描</string>
+    <string name="qrcode_activated_isnot">二维码未激活</string>
+    <string name="quanfeng">全峰</string>
+    <string name="query_doing">Is executing,Please wait!</string>
+    <string name="query_except">Identification of abnormal</string>
+    <string name="query_failed">查询失败</string>
+    <string name="query_failure">Checking failure</string>
+    <string name="qurrey">查询</string>
+    <string name="qurrey_addr">查询地点</string>
+    <string name="qurrey_time">查询时间</string>
+    <string name="qurrey_trace">查看详细信息</string>
+    <string name="rangk">排名</string>
+    <string name="recieve">发现</string>
+    <string name="recommand_pay_wx">推荐有微信账号用户使用</string>
+    <string name="recommand_pay_zhifubao">推荐有支付宝账号用户使用</string>
+    <string name="record_cancel">取消录制</string>
+    <string name="record_finish">录制完成</string>
+    <string name="record_min_tips">录制最短时间为</string>
+    <string name="record_video">拍摄/拍照</string>
+    <string name="redbag">红包</string>
+    <string name="register">注册</string>
+    <string name="remark">备注信息</string>
+    <string name="remark_info">选填，如说明发货时间或发票抬头等</string>
+    <string name="remark_title">备注</string>
+    <string name="result">真品 </string>
+    <string name="rmb">¥</string>
+    <string name="sale">销售</string>
+    <string name="sale_stus">销售状态</string>
+    <string name="saotu">扫图互动</string>
+    <string name="saotuhudong">扫图互动</string>
+    <string name="save">保存</string>
+    <string name="save_pic_tip">是否保存图片？</string>
+    <string name="save_sucess">保存成功</string>
+    <string name="scan_distinguish">扫码鉴真</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="score">分</string>
+    <string name="search">搜索</string>
+    <string name="search_article">搜索</string>
+    <string name="search_articles">搜索文章</string>
+    <string name="search_commodity">搜索商品</string>
+    <string name="search_input">输入名称搜索</string>
+    <string name="search_live">搜索品牌直播</string>
+    <string name="search_order">输入商品名称或订单编号搜索</string>
+    <string name="searching_device">正在搜索设备...</string>
+    <string name="select_album">选择照片</string>
+    <string name="select_logistics_company">请选择物流公司</string>
+    <string name="select_pay_way">选择支付方式</string>
+    <string name="select_video">选择视频</string>
+    <string name="server_error">服务器异常</string>
+    <string name="server_return_empty">服务器返回为空！</string>
+    <string name="set_header">设置头像</string>
+    <string name="set_pay_psw">修改支付密码</string>
+    <string name="setting">设置</string>
+    <string name="shangpin_info">商品信息</string>
+    <string name="shared_customization_info_to">在盒知的这个作品很有feel，可以创意定制，分享给大家看看</string>
+    <string name="shared_customization_to">在盒知的个人定制作品</string>
+    <string name="shared_to">分享到</string>
+    <string name="shentong">申通</string>
+    <string name="shunfeng">顺丰</string>
+    <string name="socialAveragePV">基准PV值</string>
+    <string name="splash">闪屏</string>
+    <string name="stowage">装车</string>
+    <string name="submit">提交</string>
+    <string name="sucess_order">下单成功</string>
+    <string name="sucess_pay">支付成功</string>
+    <string name="sucess_pay2">付款成功</string>
+    <string name="suggest_buy">可以购买</string>
+    <string name="sure">确定</string>
+    <string name="suyuan_page">溯源页面</string>
+    <string name="tag_activated_isnot">标签未激活</string>
+    <string name="tag_break">标签破损</string>
+    <string name="tag_intact">标签完好</string>
+    <string name="tag_isnot_valid">未激活</string>
+    <string name="tag_number">标签编号</string>
+    <string name="templet">模板</string>
+    <string name="text">文字</string>
+    <string name="text_complete">完成</string>
+    <string name="text_edit">编辑</string>
+    <string name="this_is_latest_version">当前为最新版本</string>
+    <string name="this_pv_value">本产品PV值：</string>
+    <string name="tiantian">天天</string>
+    <string name="tip">提示</string>
+    <string name="tip_addr_input">请选择收货地址</string>
+    <string name="tips_save">确定要保存设计吗？\n保存后的设计将无法返回修改</string>
+    <string name="title_result">查询结果</string>
+    <string name="trace_distinguish">溯源鉴真</string>
+    <string name="trace_info">追溯信息</string>
+    <string name="trace_result">鉴真结果</string>
+    <string name="uc">优速</string>
+    <string name="unity">UNITY</string>
+    <string name="unloading">卸货</string>
+    <string name="unvalidLabel">Unvalid Label!</string>
+    <string name="update_cancel">稍后再说</string>
+    <string name="update_done">升级完成，点击安装</string>
+    <string name="update_now">立即更新</string>
+    <string name="update_tip">升级提示</string>
+    <string name="update_tip2">正在升级，请勿关闭应用...</string>
+    <string name="updating_please_later">正在更新，请耐心等待...</string>
+    <string name="upload">上传信息</string>
+    <string name="url">\t\t\t\t网址：</string>
+    <string name="used_lefthand">习惯左手</string>
+    <string name="used_righthand">习惯右手</string>
+    <string name="version_number">版本编号</string>
+    <string name="video_get_fail">视频获取失败</string>
+    <string name="volume">成交量</string>
+    <string name="wallet">钱包</string>
+    <string name="web">网页</string>
+    <string name="wechat_pay_distinguish">微信支付鉴真</string>
+    <string name="wenxin_tip">温馨提醒</string>
+    <string name="wholesale">批发</string>
+    <string name="works">作品</string>
+    <string name="wukong_trace">悟空溯源</string>
+    <string name="xinyunwukong">深圳市鑫云悟空科技有限公司</string>
+    <string name="year">年</string>
+    <string name="yes">是</string>
+    <string name="youzheng">邮政</string>
+    <string name="yuantong">圆通</string>
+    <string name="yunda">韵达</string>
+    <string name="zhaijisong">宅急送</string>
+    <string name="zhongtong">中通</string>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="ActivityAnim">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+    </style>
+    <style name="ActivityWindowAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/scale_out_center</item>
+        <item name="android:activityCloseEnterAnimation">@anim/scale_in_center</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+    <style name="ActivityWindowAnimTheme1" parent="@android:style/Animation.Translucent">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+    <style name="AdDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Toast</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="AppBaseTheme" parent="android:Theme.Light"/>
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/ActivityWindowAnimTheme1</item>
+    </style>
+    <style name="Blue_CheckBoxStyle">
+        <item name="android:layout_height">@dimen/bottom_bar</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@drawable/selector_text_font_redtowhite</item>
+        <item name="android:paddingLeft">@dimen/margin</item>
+        <item name="android:paddingRight">@dimen/margin</item>
+        <item name="android:background">@drawable/selector_checkbox_blue</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+    <style name="CommonTextStyle">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/selector_viewpager_instruct</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:dividerPadding">8dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@drawable/selector_tabtext</item>
+    </style>
+    <style name="CustomeDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/shape_dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/v_list_heiht</item>
+        <item name="android:background">@drawable/selector_edittext</item>
+        <item name="android:textColor">@color/text_main</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@drawable/shape_editext_cursor</item>
+    </style>
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="RadioButton" parent="CommonTextStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selector_gray_to_red</item>
+        <item name="android:background">@drawable/selector_viewpager_instruct</item>
+    </style>
+    <style name="RadioButton2" parent="RadioButton">
+        <item name="android:background">@drawable/selector_viewpager_instruct2</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">6dp</item>
+    </style>
+    <style name="StyledIndicator1" parent="@style/AppTheme">
+        <item name="vpiTabPageIndicatorStyle">@style/noAnimation</item>
+    </style>
+    <style name="StyledIndicators" parent="@style/AppTheme">
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+    </style>
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/vpi__styles.xml -->
+    <eat-comment/>
+    <style name="TextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/vpi__dark_theme</item>
+    </style>
+    <style name="Theme.PageIndicatorDefaults" parent="android:Theme">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="UnderlineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/v_list_heiht</item>
+        <item name="android:background">@drawable/selector_edittext</item>
+    </style>
+    <style name="UnityTheme" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="ViewpagerInstructStyleCenter" parent="ViewpagerInstructStyleLeft">
+        <item name="android:background">@drawable/selector_viewpager_instruct_center</item>
+    </style>
+    <style name="ViewpagerInstructStyleLeft">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@drawable/selector_text_font_redtowhite</item>
+        <item name="android:paddingLeft">@dimen/margin</item>
+        <item name="android:paddingRight">@dimen/margin</item>
+        <item name="android:background">@drawable/selector_viewpager_instruct_left</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+    <style name="ViewpagerInstructStyleRight" parent="ViewpagerInstructStyleLeft">
+        <item name="android:background">@drawable/selector_viewpager_instruct_right</item>
+    </style>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/vpi__styles.xml -->
+    <eat-comment/>
+    <style name="Widget">
+    </style>
+    <style name="Widget.IconPageIndicator" parent="Widget">
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+    <style name="Widget.TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/vpi__tab_indicator</item>
+        <item name="android:paddingLeft">22dip</item>
+        <item name="android:paddingRight">22dip</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="noAnimation" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/selector_viewpager_instruct</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:dividerPadding">8dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+    <style name="popwindow_anim_buttom_center_style">
+        <item name="android:windowEnterAnimation">@anim/scale_in_buttom_center</item>
+        <item name="android:windowExitAnimation">@anim/scale_out_buttom_center</item>
+    </style>
+    <style name="popwindow_anim_buttom_left_style">
+        <item name="android:windowEnterAnimation">@anim/scale_in_buttom_left</item>
+        <item name="android:windowExitAnimation">@anim/scale_out_buttom_left</item>
+    </style>
+    <style name="popwindow_anim_buttom_right_style">
+        <item name="android:windowEnterAnimation">@anim/scale_in_buttom_right</item>
+        <item name="android:windowExitAnimation">@anim/scale_out_buttom_right</item>
+    </style>
+    <style name="popwindow_anim_buttomfromparent_style">
+        <item name="android:windowEnterAnimation">@anim/timepicker_anim_enter_bottom</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/timepicker_anim_exit_bottom</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+    <style name="popwindow_anim_top_center_style">
+        <item name="android:windowEnterAnimation">@anim/scale_in_top_center</item>
+        <item name="android:windowExitAnimation">@anim/scale_out_top_center</item>
+    </style>
+    <style name="popwindow_anim_top_left_style">
+        <item name="android:windowEnterAnimation">@anim/scale_in_top_left</item>
+        <item name="android:windowExitAnimation">@anim/scale_out_top_left</item>
+    </style>
+    <style name="popwindow_anim_top_right_style">
+        <item name="android:windowEnterAnimation">@anim/scale_in_top_right</item>
+        <item name="android:windowExitAnimation">@anim/scale_out_top_right</item>
+    </style>
+    <style name="submiButtonStyle">
+        <item name="android:textSize">@dimen/text_size_bigger</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/title_bar</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:background">@drawable/selector_btn_submit</item>
+    </style>
+    <style name="submiLineButtonStyle">
+        <item name="android:textSize">@dimen/text_size_bigger</item>
+        <item name="android:textColor">@drawable/selector_text_font_basetowhite</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/title_bar</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:background">@drawable/selector_btn_submit_line</item>
+    </style>
+</resources>

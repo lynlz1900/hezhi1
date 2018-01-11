@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 绿色按钮 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape android:shape="rectangle">
+
+            <solid android:color="@color/btn_red_press" />
+        </shape></item>
+    <item android:state_checked="true"><shape android:shape="rectangle">
+
+            <solid android:color="@color/btn_red_press" />
+        </shape></item>
+    <item><shape android:shape="rectangle">
+
+            <solid android:color="@color/btn_red" />
+        </shape></item>
+
+</selector><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/drawable/selector_shape_red_noconner.xml -->

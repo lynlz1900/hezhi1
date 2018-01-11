@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fouritems_ll"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:background="@color/white"
+    android:minHeight="125dp"
+    android:orientation="horizontal"
+    android:weightSum="7" >
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="2016.09.06"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5" >
+
+        <RelativeLayout
+            android:id="@+id/time_line"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin" >
+
+            <View
+                android:id="@+id/line_view"
+                android:layout_width="@dimen/v_line_height"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                layout="@layout/view_line_vetical"
+                android:background="@color/linecolor" />
+
+            <View
+                android:id="@+id/dot_view"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/shape_dot" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/scantype_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_toRightOf="@id/time_line"
+            android:text="售出"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_toRightOf="@id/scantype_tv"
+            android:text="中國廣東省深圳市劲嘉科技大厦"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/operater_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_tv"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_toRightOf="@id/time_line"
+            android:text="执行人：张山"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/memo_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/operater_tv"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_toRightOf="@id/time_line"
+            android:text="备注信息：希拉里·黛安·罗德姆·克林顿（Hillary Diane Rodham Clinton，1947年10月26日-），"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/item_list_logisticsfragment.xml -->

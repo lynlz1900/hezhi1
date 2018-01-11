@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 红色文字转白色文字选择器 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+ <item android:state_pressed="true" android:color="@color/base"/>
+    <item android:state_checked="true" android:color="@color/base"/>
+    <item android:color="@color/white"/>
+
+</selector>

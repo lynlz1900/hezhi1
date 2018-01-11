@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:background="@color/bg_redbag"
+        android:minHeight="@dimen/title_bar"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/header_left"
+            android:layout_width="@dimen/title_bar"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin"
+            android:text="关闭"
+            android:textColor="@color/redbug_text"
+            android:textSize="@dimen/text_size_normal"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="红包"
+            android:textColor="@color/redbug_text"
+            android:textSize="@dimen/text_size_bigger" />
+
+        <TextView
+            android:id="@+id/header_right"
+            android:layout_width="@dimen/title_bar"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:textColor="@color/redbug_text"
+            android:textSize="@dimen/text_size_normal"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_redbug_half" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/company_logo_iv"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_open" />
+
+        <TextView
+            android:id="@+id/company_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/company_logo_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="慕思的红包"
+            android:textColor="@color/text_main"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/redbug_tips_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/company_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="恭喜发财，大吉大利"
+            android:textColor="@color/text_tutor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/money_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/redbug_tips_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="10.00"
+            android:textColor="@color/text_main"
+            android:textSize="60sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/money_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/money_tv"
+            android:paddingBottom="14dp"
+            android:text="元"
+            android:textColor="@color/text_main"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/store_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/money_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="已存入钱包"
+            android:textColor="@color/blue"
+            android:textSize="16sp" />
+
+        <com.wukong.hezhi.ui.view.RatioLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            app:picRatio="1.78" >
+
+            <FrameLayout
+                android:id="@+id/ad_fr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible" >
+            </FrameLayout>
+        </com.wukong.hezhi.ui.view.RatioLayout>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/activity_redbag.xml -->

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparency"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:background="@drawable/bg_redbug" >
+
+        <ImageView
+            android:id="@+id/close_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/margin"
+            android:src="@drawable/icon_close" />
+
+        <ImageView
+            android:id="@+id/company_logo_iv"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/icon_open" />
+
+        <TextView
+            android:id="@+id/company_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/company_logo_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="慕思"
+            android:textColor="@color/redbug_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/redbug_tips_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/company_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="36dp"
+            android:text="恭喜发财，大吉大利"
+            android:textColor="@color/redbug_text"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/open_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="105dp"
+            android:src="@drawable/icon_open" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/layout_redbug.xml -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <alpha
+        android:duration="@android:integer/config_shortAnimTime"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.5" />
+
+    <scale
+        android:duration="@android:integer/config_shortAnimTime"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:pivotX="100%"
+        android:pivotY="100%"
+        android:toXScale="0.1"
+        android:toYScale="0.1" />
+
+</set><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/anim/scale_out_buttom_right.xml -->

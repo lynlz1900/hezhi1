@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fouritems_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <ImageView
+            android:id="@+id/icon_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_empty" />
+
+        <TextView
+            android:id="@+id/redbag_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/icon_iv"
+            android:layout_toRightOf="@id/icon_iv"
+            android:text="提现"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_size_bigger" />
+
+        <TextView
+            android:id="@+id/redbag_tip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/icon_iv"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_toRightOf="@id/redbag_tip"
+            android:textColor="@color/base"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/icon_iv"
+            android:layout_toRightOf="@id/icon_iv"
+            android:text="2017.3.31 10:18"
+            android:textColor="@color/text_tutor"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/open_tv"
+            android:layout_width="56dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/selector_btn_submit_line2"
+            android:gravity="center"
+            android:text="打开"
+            android:textColor="@color/text_tutor2"
+            android:textSize="@dimen/text_size_normal" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"
+            android:background="@color/linecolor" />
+
+        <ProgressBar
+            android:id="@+id/myProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_above="@+id/line"
+            android:progressDrawable="@drawable/shape_progress"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/item_list_game.xml -->

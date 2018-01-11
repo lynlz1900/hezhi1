@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_custom"
+    android:gravity="center_horizontal" >
+
+    <com.wukong.hezhi.ui.view.RatioLayoutHeiht
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        app:picRatio="3" >
+
+        <RelativeLayout
+            android:id="@+id/custom_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/bottom_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:padding="1px"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/templet_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_kuang"
+                android:padding="1dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/close_model_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/templet_iv"
+                android:layout_alignTop="@id/templet_iv"
+                android:layout_marginRight="-18dp"
+                android:layout_marginTop="-18dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/icon_close_text"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/design_iv"
+                android:layout_width="100dp"
+                android:layout_height="180dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_kuang"
+                android:padding="1dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_plus_yellow"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </com.wukong.hezhi.ui.view.RatioLayoutHeiht>
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v_list_heiht"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/selector_edittext"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="提现金额 "
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_size_normal" />
+
+        <EditText
+            android:id="@+id/getcash_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_weight="2"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:inputType="numberDecimal"
+            android:textCursorDrawable="@drawable/shape_editext_cursor"
+            android:textSize="@dimen/text_size_bigger" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v_list_heiht"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:text="余额"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/balance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/base"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/get_allcash_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/selector_btn_submit_line"
+            android:gravity="center_vertical"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:text="全部提现"
+            android:textColor="@drawable/selector_text_font_basetowhite"
+            android:textSize="@dimen/text_size_small" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/getcrash_bt"
+        style="@style/submiButtonStyle"
+        android:layout_marginTop="44dp"
+        android:text="提现" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:text="温馨提示：提现时间为当天8:00到24:00"
+        android:textColor="@color/text_tutor"
+        android:textSize="@dimen/text_size_small" />
+
+</LinearLayout>

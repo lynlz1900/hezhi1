@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/commodityInfo_tv"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_below="@id/banner_rl"
+        android:background="@color/white"
+        android:padding="@dimen/margin" >
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="茅台酒茅台酒茅台酒茅台酒茅台酒茅台酒茅台酒茅台酒茅台酒茅台酒茅台酒" />
+
+        <TextView
+            android:id="@+id/discountPrice_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Y269"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_title" />
+
+        <TextView
+            android:id="@+id/costPrice_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/discountPrice_tv"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_toRightOf="@id/discountPrice_tv"
+            android:text="Y279"
+            android:textColor="@color/text_tutor"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/sale_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="成交量"
+            android:textColor="@color/text_tutor2"
+            android:textSize="@dimen/text_size_small" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/fragment_commdity_detail.xml -->

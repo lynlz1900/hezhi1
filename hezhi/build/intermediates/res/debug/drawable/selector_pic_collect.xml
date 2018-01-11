@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/icon_collect_ac" android:state_checked="true"/>
+    <item android:drawable="@drawable/icon_collect_ac" android:state_pressed="true"/>
+    <item android:drawable="@drawable/icon_collect"/>
+
+</selector><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/drawable/selector_pic_collect.xml -->

@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_rl"
+    android:layout_width="match_parent"
+    android:layout_height="97dp"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/seller_header_iv"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/margin"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/app_name"
+         />
+
+    <TextView
+        android:id="@+id/summary_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/seller_header_iv"
+        android:layout_toLeftOf="@+id/guanzhu_cb"
+        android:ellipsize="end"
+        android:maxEms="12"
+        android:singleLine="true"
+        android:textColor="@color/text_tutor"
+        android:textSize="@dimen/text_size_small" 
+        />
+
+    <TextView
+        android:id="@+id/seller_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/summary_tv"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@id/seller_header_iv"
+        android:layout_toLeftOf="@+id/guanzhu_cb"
+        android:ellipsize="end"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_size_bigger" 
+        />
+
+    <TextView
+        android:id="@+id/funs_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_toRightOf="@id/seller_header_iv"
+         android:layout_toLeftOf="@+id/guanzhu_cb"
+        android:textColor="@color/text_tutor"
+        android:textSize="@dimen/text_size_small" 
+         android:layout_below="@id/summary_tv"
+         android:layout_marginTop="4dp"
+         />
+
+    <CheckBox
+        android:id="@+id/guanzhu_cb"
+        android:layout_width="48dp"
+        android:layout_height="20dp"
+        android:background="@drawable/selector_btn_submit_line"
+        android:button="@null"
+        android:gravity="center"
+        android:textColor="@drawable/selector_text_font_basetowhite"
+        android:textSize="@dimen/text_size_small" 
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margin"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:id="@+id/buy_bt"
+        android:layout_width="48dp"
+        android:layout_height="29dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin"
+        android:background="@drawable/selector_btn_cancel"
+        android:button="@null"
+        android:text="直购"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small"
+        android:visibility="gone"/>
+
+</RelativeLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/fragment_product_detail.xml -->

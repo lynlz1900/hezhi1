@@ -1,0 +1,13 @@
+﻿{
+  "httpCode": "200",
+  "body": {
+    "sign": "157EC77F3BA8713659C5921ACA2EA4CB",
+    "appId": "wx60fcfcfc734641b3",
+    "timeStamp": "1502264466",
+    "partnerId ": "1411162602",
+    "packageValue ": "Sign=WXPay",
+    "nonceStr": "rWTXkzWGjPWHQBoqzS7XuBIn2bibDwhf",
+    "prepayId": "wx2017080915423878b2e75bdf0260314599"
+  },
+  "promptMessage": "下单成功"
+}

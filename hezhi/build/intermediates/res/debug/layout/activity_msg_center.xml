@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin" >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swprf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/lv_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin"
+                android:background="@color/white"
+                android:cacheColorHint="@color/transparency"
+                android:divider="@color/linecolor"
+                android:dividerHeight="1px"
+                android:listSelector="@color/transparency"
+                android:scrollbars="none" >
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <ViewStub
+            android:id="@+id/empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:inflatedId="@+id/pic_view_id_after_inflate"
+            android:layout="@layout/view_data_empty" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/activity_msg_center.xml -->

@@ -1,0 +1,31 @@
+﻿{
+    "httpCode": "200",
+    "body": {
+        "dataList": [
+            {
+                "iconUrl": "http://hezhicloud.oss-cn-shenzhen.aliyuncs.com/image_final/game_ico_moutai.png",
+                "apkUrl": "http://download.pkgiot.com/games/moutai_apsaras.apk",
+                "title": "飞天茅台AR互动小游戏",
+                "appName": "com.fancyar.wkvision",
+                "content": "体验飞天仙女为你倒酒赐福"
+            },
+            {
+                "iconUrl": "http://hezhicloud.oss-cn-shenzhen.aliyuncs.com/image_final/game_ico_moutaichun.png",
+                "apkUrl": "http://download.pkgiot.com/games/maotaichun_fishing.apk",
+                "title": "茅台醇AR互动小游戏",
+                "appName": "com.wukong.jinjiahezhiar",
+                "content": "捕鱼最多的还能领红包哦"
+            },
+            {
+                "iconUrl": "http://hezhicloud.oss-cn-shenzhen.aliyuncs.com/image_final/game_ico_musi.png",
+                "apkUrl": "http://download.pkgiot.com/games/mousse_bubble_play.apk",
+                "title": "慕思肺活量测试小游戏",
+                "appName": "com.aa.TheGirl2",
+                "content": "测测自己能享受几级服务"
+            }
+        ],
+        "page": 1,
+        "countPage": 1
+    },
+    "promptMessage": "成功"
+}

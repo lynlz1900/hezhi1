@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_popup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_transparency_black"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <LinearLayout
+        android:id="@+id/layout_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include layout="@layout/view_line_horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/margin"
+            android:paddingRight="@dimen/margin"
+            android:paddingTop="@dimen/margin3" >
+
+            <ImageView
+                android:id="@+id/commodity_iv"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/bg_custom"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_toRightOf="@id/commodity_iv"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:text="茅台酒茅台酒茅台酒茅台酒茅台酒茅台酒茅台酒茅台酒茅台酒茅台酒"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/discountPrice_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_tv"
+                android:layout_margin="@dimen/margin"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@id/commodity_iv"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_bigger" />
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="28dp"
+                android:layout_below="@id/discountPrice_tv"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_toRightOf="@id/commodity_iv"
+                android:background="@drawable/selector_btn_submit_line2"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/minus_iv"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/selector_btn_whitetogray_line_nocorer"
+                    android:src="@drawable/icon_minus" />
+
+                <EditText
+                    android:id="@+id/sum_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="@color/text_main"
+                    android:textCursorDrawable="@color/transparency"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:id="@+id/plus_iv"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/selector_btn_whitetogray_line_nocorer"
+                    android:src="@drawable/icon_plus" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_bar"
+            android:layout_below="@id/commodity_iv"
+            android:layout_marginTop="@dimen/margin3"
+            android:orientation="vertical" >
+
+            <include layout="@layout/view_line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/money_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_bigger" />
+
+                <TextView
+                    android:id="@+id/submit_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_submit_nocorner"
+                    android:gravity="center"
+                    android:text="@string/buy_now"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_bigger" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/layout_popupwindow_order.xml -->

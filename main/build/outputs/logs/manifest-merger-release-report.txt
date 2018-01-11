@@ -1,0 +1,11 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Program Files\workspace1\main\AndroidManifest.xml:1:1-5:12
+INJECTED from E:\Program Files\workspace1\main\AndroidManifest.xml:1:1-5:12
+INJECTED from E:\Program Files\workspace1\main\AndroidManifest.xml:1:1-5:12
+	package
+		ADDED from E:\Program Files\workspace1\main\AndroidManifest.xml:2:5-36
+		INJECTED from E:\Program Files\workspace1\main\AndroidManifest.xml
+		INJECTED from E:\Program Files\workspace1\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Program Files\workspace1\main\AndroidManifest.xml:1:11-69

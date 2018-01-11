@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- ========================高度类========================== -->
+    <!-- 列表的高 -->
+    <dimen name="v_heiht">78dp</dimen>
+    <!-- 列表的高 -->
+    <dimen name="v_list_heiht">44dp</dimen>
+    <!-- 带icon列表的高 -->
+    <dimen name="v_list_heiht_icon">48dp</dimen>
+    <!-- 标题栏的高度 -->
+    <dimen name="title_bar">44dp</dimen>
+    <!-- 带icon底栏的高度 -->
+    <dimen name="bottom_bar">48dp</dimen>
+    <!-- 线的高度 -->
+    <dimen name="v_line_height">1px</dimen>
+    <!-- 图片介绍栏的高度 -->
+    <dimen name="image_height">200dp</dimen>
+    <!-- 图片介绍栏宽度度 -->
+    <dimen name="image_with">300dp</dimen>
+    <!-- icon的大小 -->
+    <dimen name="icon_height">22dp</dimen>
+    <!-- 头像的大小 -->
+    <dimen name="icon_header">72dp</dimen>
+    <!-- popupwindow弹框item高度 -->
+    <dimen name="popuwindow_item_height">35dp</dimen>
+    <!-- popupwindow高度 -->
+    <dimen name="popuwindow_height">350dp</dimen>
+    <dimen name="global_screenshot_bg_padding">20dp</dimen>
+    <!-- ========================边距类========================== -->
+    <!-- 边距 -->
+    <dimen name="margin1">6dp</dimen>
+    <!-- 边距 -->
+    <dimen name="margin">12dp</dimen>
+    <!-- 边距 -->
+    <dimen name="margin2">16dp</dimen>
+    <!-- 边距 -->
+    <dimen name="margin3">24dp</dimen>
+    <!-- 边距 -->
+    <dimen name="margin4">8dp</dimen>
+
+    <!-- ========================文字类========================== -->
+    <!-- 小文本大小 -->
+    <dimen name="text_size_small">12dp</dimen>
+    <!-- 普通文本大小 -->
+    <dimen name="text_size_normal">14dp</dimen>
+    <!-- 加大文本大小 -->
+    <dimen name="text_size_bigger">16dp</dimen>
+    <!-- 标题字体 -->
+    <dimen name="text_title">18dp</dimen>
+    <!-- ========================圆角类========================== -->
+    <!-- Viewpager半圆型引导卡的角度 (此圆度数为按钮高度的一半的根号2倍，这样可用画出一个半圆。) -->
+    <dimen name="circlecornners">15dp</dimen>
+    <dimen name="circlecornners2">30dp</dimen>
+    <!-- 类似微信popupwindow宽度 -->
+    <dimen name="popupwindow_red_with">120dp</dimen>
+    <!-- 普通按钮圆角的度数 -->
+    <dimen name="commonconners">5dp</dimen>
+    <!-- 普通无圆角的度数 -->
+    <dimen name="noconners">0dp</dimen>
+    <!-- 弹框圆角的度数 -->
+    <dimen name="dialogconners">5dp</dimen>
+    <dimen name="default_width">150dp</dimen>
+    <dimen name="default_height">50dp</dimen>
+</resources>

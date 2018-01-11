@@ -1,0 +1,225 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v_list_heiht"
+        android:layout_marginTop="@dimen/margin"
+        android:gravity="center"
+        android:text="导航" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v_list_heiht"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:text="域名"
+            android:textColor="@color/text_normal" />
+
+        <EditText
+            android:id="@+id/url_tv"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="@null"
+            android:text="test.wukongvision.com"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+    <include layout="@layout/view_line_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v_list_heiht"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:text="端口"
+            android:textColor="@color/text_normal" />
+
+        <EditText
+            android:id="@+id/port_tv"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="@null"
+            android:text="443"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+    <include layout="@layout/view_line_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v_list_heiht"
+        android:layout_marginTop="@dimen/margin"
+        android:gravity="center"
+        android:text="传媒" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v_list_heiht"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:text="域名"
+            android:textColor="@color/text_normal" />
+
+        <EditText
+            android:id="@+id/url_tv1"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="@null"
+            android:text="test.wukongvision.com"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+    <include layout="@layout/view_line_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v_list_heiht"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:text="端口"
+            android:textColor="@color/text_normal" />
+
+        <EditText
+            android:id="@+id/port_tv1"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="@null"
+            android:text="8080"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+    <include layout="@layout/view_line_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v_list_heiht"
+        android:layout_marginTop="@dimen/margin"
+        android:gravity="center"
+        android:text="设备信息" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v_list_heiht"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:text="设备号"
+            android:textColor="@color/text_normal" />
+
+        <EditText
+            android:id="@+id/device_id"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="@null"
+            android:editable="false"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+    <include layout="@layout/view_line_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v_list_heiht"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:text="分辨率"
+            android:textColor="@color/text_normal" />
+
+        <EditText
+            android:id="@+id/desteny_id"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="@null"
+            android:editable="false"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+    <include layout="@layout/view_line_horizontal" />
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v_list_heiht"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:text="用户id"
+            android:textColor="@color/text_normal" />
+
+        <EditText
+            android:id="@+id/user_id"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="@null"
+            android:editable="false"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+    <include layout="@layout/view_line_horizontal" />
+
+</LinearLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/activity_godhide_model.xml -->

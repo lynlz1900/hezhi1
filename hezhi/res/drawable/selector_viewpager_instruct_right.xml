@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--viewpager引导的右侧选择器（半圆角）  -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true"><shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+
+            <corners android:bottomRightRadius="@dimen/circlecornners" android:topRightRadius="@dimen/circlecornners" />
+        </shape></item>
+    <item><layer-list>
+            <item><shape android:shape="rectangle">
+                    <solid android:color="@color/white" />
+                    <corners android:bottomRightRadius="@dimen/circlecornners" android:topRightRadius="@dimen/circlecornners" />
+                </shape></item>
+            <item android:bottom="1dp" android:left="1dp" android:right="1dp" android:top="1dp"><shape android:shape="rectangle">
+                    <solid android:color="@color/base" />
+                    <corners android:bottomRightRadius="@dimen/circlecornners" android:topRightRadius="@dimen/circlecornners" />
+                </shape></item>
+        </layer-list></item>
+
+</selector>

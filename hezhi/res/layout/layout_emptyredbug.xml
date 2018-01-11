@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:background="@drawable/shape_redbag" >
+
+        <ImageView
+            android:id="@+id/close_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/margin"
+            android:src="@drawable/icon_close" />
+
+        <ImageView
+            android:id="@+id/company_logo_iv"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_open" />
+
+        <TextView
+            android:id="@+id/company_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/company_logo_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="慕思"
+            android:textColor="@color/redbug_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/redbug_tips_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/company_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="36dp"
+            android:text="@string/empty_bag_tips"
+            android:textColor="@color/redbug_text"
+            android:textSize="24sp" />
+
+        <com.wukong.hezhi.ui.view.RatioLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin"
+            android:gravity="center"
+            app:picRatio="1.78" >
+
+            <FrameLayout
+                android:id="@+id/ad_fr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible" >
+            </FrameLayout>
+        </com.wukong.hezhi.ui.view.RatioLayout>
+    </RelativeLayout>
+
+</LinearLayout>

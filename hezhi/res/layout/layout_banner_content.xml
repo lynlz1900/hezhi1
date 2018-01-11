@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ad_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    >
+
+    <com.wukong.hezhi.ui.view.BannerViewPager
+        android:id="@+id/pager_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.wukong.hezhi.ui.view.BannerViewPager>
+
+    <LinearLayout
+        android:id="@+id/viewGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <ImageView 
+        android:id="@+id/image_banner_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name"
+        android:background="@color/transparency"
+        />
+    
+    <ImageView 
+        android:id="@+id/text_banner_no"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_custom_banner"
+        android:contentDescription="@string/app_name"
+        />
+</RelativeLayout>

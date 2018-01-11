@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fouritems_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@drawable/selector_whitetogray_nocorner" >
+
+        <RelativeLayout
+            android:id="@+id/icon_rl"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/selector_whitetogray_nocorner"
+            android:gravity="center" >
+            <ImageView
+                android:id="@+id/image_name"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_empty"
+                android:contentDescription="@string/app_name"
+                 />
+        </RelativeLayout>
+
+        <LinearLayout
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon_rl"
+            android:layout_toLeftOf="@+id/text_volume"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+             >
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_size_bigger"
+            android:ellipsize="end"
+            android:singleLine="true"
+             />
+
+        <TextView
+            android:id="@+id/text_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/text_tutor"
+            android:textSize="@dimen/text_size_small" 
+            android:layout_marginTop="@dimen/margin4"
+            />
+	</LinearLayout>
+        <TextView
+            android:id="@+id/text_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:textColor="@color/text_tutor"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_small" 
+            />
+
+        <View
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/linecolor" />
+    </RelativeLayout>
+
+</LinearLayout>

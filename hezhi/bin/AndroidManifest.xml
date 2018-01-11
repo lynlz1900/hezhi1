@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.wukong.hezhi"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:installLocation="preferExternal"
+          android:versionCode="36"
+          android:versionName="2.6.5">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21"/>
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- =========================================h5全屏播放开始================================================ -->
+    <uses-feature android:name="android.hardware.sensor.accelerometer"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- =========================================h5全屏播放结束================================================ -->
+
+
+    <!-- =========================================百度定位开始================================================ -->
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 允许程序连接到已配对的蓝牙设备 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <!-- 允许程序发现和配对蓝牙设备 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <!-- 允许访问振动设备 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 屏幕保持唤醒 不锁屏 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- 允许应用程序更改主屏幕中的设置和快捷方式 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <!-- =========================================百度定位结束================================================ -->
+    <!-- =========================================极光推送开始================================================ -->
+    <!-- Required -->
+    <permission
+        android:name="com.wukong.hezhi.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.wukong.hezhi.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <!-- =========================================精光推送结束================================================ -->
+    <!-- =========================================Unity 3D开始================================================ -->
+    <uses-feature android:glEsVersion="0x00020000"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false"/>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false"/>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- =========================================Unity 3D结束================================================ -->
+
+    <application
+        android:name="com.wukong.hezhi.ui.activity.BaseApplication"
+        android:icon="@drawable/icon_hezhi_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:scheme="hezhi"/>
+            </intent-filter>
+        </activity>
+
+        <!-- android:theme="@style/StyledIndicators"  否则在5.0以下版本，会出现bug -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/StyledIndicator1"/>
+        <!-- 上传信息页 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.UploadActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden"/>
+        <!-- 录制视频页 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.VideoRecordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/ActivityAnim"/>
+        <!-- 视频预览页 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.VideoPreviewActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        <!-- 照片预览页 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.PicPreviewActivity"
+            android:launchMode="singleTop"/>
+        <!-- 定制信息预览 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.CustomPreviewActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"/>
+        <!-- 定制信息预览 -->
+        <!-- 溯源主页 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.TraceActivity"
+            android:launchMode="singleTop"
+            />
+        <!-- 关于我们 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.AboutUsActivity"
+            android:launchMode="singleTop"
+            />
+        <!-- 鉴真结果 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.DisResultActivity"
+            />
+        <!-- 调试模式 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.DebugModelActivity"
+            android:launchMode="singleTop"/>
+        <!-- 合成模板 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.CustomComposeActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ActivityAnim"
+            />
+        <!--unity视频预览界面-->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.UnityVideoActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--登录-->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.LoginActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ActivityAnim"
+            />
+        <!-- 个人信息 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.PersonInfoActivity"
+            android:launchMode="singleTop"/>
+        <!-- 设置 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.SettingActivity"
+            android:launchMode="singleTop"/>
+        <!-- 关于 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.AboutActivity"
+            android:launchMode="singleTop"/>
+        <!--视频定制预览界面-->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.WebVideoPreviewActivity"
+            android:launchMode="singleTop"/>
+        <!-- 意见反馈 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.FeedbackActivity"
+            android:launchMode="singleTop"/>
+        <!-- 功能介绍 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.FunctionIntroduceActivity"
+            android:launchMode="singleTop"/>
+        <!-- 账户与安全 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.AccountSafeActivity"
+            android:launchMode="singleTop"/>
+        <!-- 绑定手机 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.BindPhoneActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ActivityAnim"/>
+        <!-- 社交账号绑定 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.BindSocialActivity"
+            android:launchMode="singleTop"/>
+        <!-- 邀请好友 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.InviteFriendActivity"
+            android:launchMode="singleTop"/>
+        <!-- 昵称 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.NicknameActivity"
+            android:launchMode="singleTop"
+            />
+        <!-- 地区 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.SettingAddressActivity"
+            android:launchMode="singleTop"/>
+        <!-- 快递查询 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.ExpressQueryActivity"
+            android:launchMode="singleTop"/>
+        <!-- 网页 -->
+        <activity android:name="com.wukong.hezhi.ui.activity.WebViewActivity"/>
+        <!-- 抽奖网页 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.WebPrizeActivity"
+            android:launchMode="singleTop"/>
+        <!-- 抽奖游戏网页 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.WebARListActivity"
+            android:launchMode="singleTop"/>
+        <!-- 红包 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.RedBagActivity"
+            android:launchMode="singleTop"/>
+        <!-- 我的钱包 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.MyWalletActivity"
+            android:launchMode="singleTop"/>
+        <!-- 零钱明细 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.CashDetailActivity"
+            android:launchMode="singleTop"/>
+        <!-- 提现 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.GetCrashActivity"
+            android:launchMode="singleTop"/>
+        <!-- 消息中心 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.MsgCenterActivity"
+            android:launchMode="singleTop"/>
+        <!-- 消息详情 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.MsgDetaiActivity"
+            android:launchMode="singleTop"/>
+        <!-- 益趣互动 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.GameCenterActivity"
+            android:launchMode="singleTop"/>
+        <!-- 提示 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.TipActivity"
+            android:launchMode="singleTop"/>
+        <!-- 商品搜索页面 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.SearchCommodityActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <!-- 联系我们 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.ContacUsActivity"
+            android:launchMode="singleTop"/>
+        <!-- 更换手机号 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.ChangePhoneActivity2"
+            android:launchMode="singleTop"/>
+        <!-- 我的定制 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.MyCustomizationActivity"
+            android:launchMode="singleTop"/>
+        <!-- 定制订单 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.OrderCustActivity"
+            android:launchMode="singleTop"/>
+        <!-- 定制订单 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.OrderCustomActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/StyledIndicators"/>
+        <!-- 定制订单搜索 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.SearchOrderCustActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <!-- 订单详情 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.OrderCustDetailActivity"
+            android:launchMode="singleTop"/>
+        <!-- 取消订单 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.OrderCustCancelActivity"
+            android:launchMode="singleTop"/>
+        <!-- 选择定制的商品 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.CommodityActivity"
+            android:launchMode="singleTop"/>
+        <!-- 选择商品 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.CustomizationActivity"
+            android:launchMode="singleTop"/>
+        <!-- 选择定制模板 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.CustomTemplateActivity"
+            android:launchMode="singleTop"/>
+        <!-- 设计模板 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.CommodityDesignActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/ActivityAnim"/>
+        <!-- 升级 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.UpdateActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/ActivityAnim"/>
+
+        <!-- 商品定制 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.CommodityCustomActivity"
+            android:launchMode="singleTop"/>
+        <!-- 商品详情 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.CommodityDetailActivity"
+            android:launchMode="singleTop"/>
+        <!-- 商品详情 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.CommodityInfoActivity"
+            android:launchMode="singleTop"/>
+        <!-- 立即购买 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.MyCustomizationTobuyActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ActivityAnim"/>
+        <!-- 收货地址 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.AddressActivity"
+            android:launchMode="singleTop"/>
+        <!-- 新建收货地址 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.AddressAddActivity"
+            android:launchMode="singleTop"/>
+        <!-- 编辑收货地址 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.AddressEditActivity"
+            android:launchMode="singleTop"/>
+        <!-- 收货地址管理 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.AddressManageActivity"
+            android:launchMode="singleTop"/>
+        <!-- 查看物流信息 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.ExpressViewActivity"
+            android:launchMode="singleTop"/>
+        <!-- 我的关注 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.MyAttentionActivity"
+            android:launchMode="singleTop"/>
+        <!-- 量子云识别扫描 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.ScanActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"/>
+        <!-- 支付订单 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.OrderPayActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ActivityAnim"/>
+        <!-- 付款结果 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.OrderPayResultActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name="com.wukong.hezhi.ui.activity.PhotoActivity"/>
+        <!-- 确认订单 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.OrderConfirmActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden"/>
+        <!-- 商品定制上传信息 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.CommodityCustomUploadActivity"
+            android:launchMode="singleTop"/>
+        <!-- 搜索品牌直播 windowSoftInputMode自动弹出键盘 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.SearchLiveActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <!-- 评论 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.ArticleCommentActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden"/>
+        <!-- 我的关注 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.MyGuanzhuActivity"
+            android:launchMode="singleTop"/>
+        <!-- 手机号 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.ChangePhoneActivity"
+            android:launchMode="singleTop"/>
+        <!-- 反馈成功 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.FeedbackSucessActivity"
+            android:launchMode="singleTop"/>
+        <!-- 开锁短信验证 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.LockSMSActivity"
+            android:launchMode="singleTop"/>
+        <!-- 开锁蓝牙通讯 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.LockBLEActivity"
+            android:launchMode="singleTop"/>
+        <!-- 评价晒单 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.AppraiseShowActivity"
+            android:launchMode="singleTop"/>
+        <!-- 追加评价 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.AppraiseAddActivity"
+            android:launchMode="singleTop"/>
+        <!-- 评价详情 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.AppraiseDetailActivity"
+            android:launchMode="singleTop"/>
+        <!-- 评价中心 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.AppraiseCenterActivity"
+            android:launchMode="singleTop"/>
+        <!-- 评价晒单图片删除 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.AppraiseImageDelActivity"
+            android:launchMode="singleTop"/>
+        <!-- 评价图片加载显示 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.AppraiseImageShowActivity"
+            android:launchMode="singleTop"/>
+        <!-- 商品信息 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.ProductMainActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        <!-- NFC鉴真 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.NFCActivity"
+            android:launchMode="singleTop"/>
+        <!--视频定制信息预览-->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.WebCustomVideoPreviewActivity"
+            android:launchMode="singleTop"/>
+        <!-- 商户名称 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.BusinessAcitivty"
+            android:launchMode="singleTop"/>
+        <!-- 评论 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.ProductCommentActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden"/>
+        <!-- 我的收藏 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.MyCollectionActivity"
+            android:launchMode="singleTop"/>
+        <!-- 文章详情 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.ArticleActivity"
+            />
+        <!-- 搜索文章 windowSoftInputMode自动弹出键盘 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.SearchArticleActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <!-- 盒知看点 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.FocusActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/StyledIndicators"/>
+        <!-- 二维码扫描 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.QRActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+         <!-- 扫码开锁 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.QRLockActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <!-- 指引页面 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.GuideActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+
+        <activity
+            android:name="com.wukong.hezhi.function.imagepicker.ui.ImageBaseActivity"
+            android:launchMode="singleTop"
+            />
+        <activity
+            android:name="com.wukong.hezhi.function.imagepicker.ui.ImageGridActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ActivityAnim"
+            />
+        <activity
+            android:name="com.wukong.hezhi.function.imagepicker.ui.ImageCropActivity"
+            android:launchMode="singleTop"
+            />
+        <activity
+            android:name="com.wukong.hezhi.function.imagepicker.ui.ImagePreviewActivity"
+            android:launchMode="singleTop"
+            />
+
+        <!-- 微信登录 -->
+        <activity
+            android:name="com.wukong.hezhi.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 微信支付 -->
+        <activity
+            android:name="com.wukong.hezhi.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <!-- 注册支付宝网页支付，当手机为安装支付宝的时候自动跳转到网页支付。只需要在这配置文件中加下面配置。 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+
+        <!-- qq登录 -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.QQActivity"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent1105817044"/>
+            </intent-filter>
+        </activity>
+        <!-- SDK_V2.0引入了AssistActivity -->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <!-- 百度定位 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+        </service>
+        <!-- ===============================uintity 3D开始=============================== -->
+        <!-- unity -->
+        <activity
+            android:name="com.wukong.hezhi.ui.activity.UnityPlayerActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityAnim">
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true"/>
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false"/>
+        </activity>
+        <uses-library
+            android:name="com.ti.s3d"
+            android:required="false"/>
+        <!-- To support the ODG R7 in stereo mode we must add the following library. -->
+        <uses-library
+            android:name="com.osterhoutgroup.api.ext"
+            android:required="false"/>
+        <uses-library
+            android:name="com.ti.s3d"
+            android:required="false"/>
+        <!-- To support the ODG R7 in stereo mode we must add the following library. -->
+        <uses-library
+            android:name="com.osterhoutgroup.api.ext"
+            android:required="false"/>
+        <!-- ===============================uintity 3D结束 =============================== -->
+
+        <!-- ===============================极光推送开始 =============================== -->
+        <!-- Rich push 核心功能 since 2.0.6 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle">
+        </activity>
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.wukong.hezhi"/>
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false">
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+
+                <category android:name="com.wukong.hezhi"/>
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/> <!-- Required  显示通知栏 -->
+                <category android:name="com.wukong.hezhi"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false"/>
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.wukong.hezhi.receiver.JgPushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION"/> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.wukong.hezhi"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- ===============================极光推送结束 =============================== -->
+
+
+        <!-- 正式 iAE4q4UB1wxV3hu311yKpxq6q6WOrp9f -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="iAE4q4UB1wxV3hu311yKpxq6q6WOrp9f"/>
+        <!-- 量子云识别 -->
+        <meta-data
+            android:name="com.suntech.lbsapi.API_KEY"
+            android:value="dewyB9AJL0aJ5W/x9KUPrPlqc2ZpnA48a2+VKX52aFM1l9xZ6z6oPGwCrPwRRFW98ML58ZjmvQ5jNTInI6O4xsaHQ+0PQf8stloYtqljZw8="/>
+        <!-- 友盟统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58c0b3c8310c935129001fda"/>
+        <!-- 友盟统计渠道 -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="www.pkgiot.com"/>
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default"/>
+        <!-- 极光推送 正式账号：f54c6ed9e8a8845af10fffa4 测试账号：47472f25472244afdeaa578a -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="${umeng_app_key}"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wukong.hezhi.ui.view.swipeview.SwipeBackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+    
+<!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/swipeback_layout.xml -->

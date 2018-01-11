@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ad_rl"
+    android:layout_width="494dp"
+    android:layout_height="326dp"
+    android:layout_centerInParent="true"
+    android:visibility="gone" >
+
+    <ImageView
+        android:id="@+id/ad_iv"
+        android:layout_width="450dp"
+        android:layout_height="282dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/close_iv"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icon_closead" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginRight="22dp"
+        android:background="@color/bg_transparency_black"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="广告"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

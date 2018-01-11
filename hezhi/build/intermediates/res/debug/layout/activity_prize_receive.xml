@@ -1,0 +1,235 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_address_header" 
+             android:contentDescription="@string/app_name"
+             />
+
+        <RelativeLayout
+            android:id="@+id/add_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_whitetogray_nocorner"
+            android:minHeight="78dp"
+            android:paddingBottom="18dp"
+            android:paddingLeft="@dimen/margin"
+            android:paddingRight="@dimen/margin"
+            android:paddingTop="18dp" >
+
+            <ImageView
+                android:id="@+id/arrow_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_arrow_right"
+                 android:contentDescription="@string/app_name"
+                  />
+
+            <TextView
+                android:id="@+id/customer_name_tv"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin3"
+                android:layout_toRightOf="@id/customer_name_tv"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/default_tv"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/phone_tv"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_toRightOf="@id/phone_tv"
+                android:background="@drawable/shape_base_line"
+                android:gravity="center"
+                android:text="@string/address_default"
+                android:textColor="@color/base"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/add_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customer_name_tv"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_toLeftOf="@id/arrow_iv"
+                android:textColor="@color/text_tutor"
+                android:textSize="@dimen/text_size_normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_null_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_whitetogray_nocorner"
+            android:minHeight="54dp"
+            android:paddingBottom="18dp"
+            android:paddingLeft="@dimen/margin"
+            android:paddingRight="@dimen/margin"
+            android:paddingTop="18dp" >
+
+            <ImageView
+                android:id="@+id/arrow_iv02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_arrow_right"
+                android:contentDescription="@string/app_name"
+                 />
+
+            <TextView
+                android:id="@+id/addr_null_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/arrow_iv02"
+                android:singleLine="true"
+                android:text="@string/address_input"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size_normal" 
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@color/white"
+            android:padding="@dimen/margin" 
+            android:orientation="vertical"
+            >
+            <LinearLayout 
+                 android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size_normal" 
+                android:text="@string/prize_name"
+                />
+            <TextView
+                android:id="@+id/text_prize_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size_normal" 
+                />
+			</LinearLayout>
+			
+             <LinearLayout 
+                 android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size_normal" 
+                android:text="@string/prize_price"
+                />
+            <TextView
+                android:id="@+id/text_prize_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size_normal" 
+                />
+			</LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:minHeight="54dp"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin"
+                android:paddingLeft="@dimen/margin"
+                android:paddingRight="@dimen/margin"
+                android:paddingTop="@dimen/margin" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remark_title"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <EditText
+                    android:id="@+id/remark_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:background="@null"
+                    android:hint="@string/remark_info"
+                    android:maxLength="50"
+                    android:textColor="@color/text_main"
+                    android:textCursorDrawable="@drawable/shape_editext_cursor"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <include layout="@layout/view_line_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/btn_prize_receive"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_submit_nocorner"
+                android:gravity="center"
+                android:text="@string/prize_receive_confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_bigger" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/activity_prize_receive.xml -->

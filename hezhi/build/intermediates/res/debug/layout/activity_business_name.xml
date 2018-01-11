@@ -1,0 +1,156 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swprf"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray" >
+
+    <com.wukong.hezhi.ui.view.LoadMoreScrollView
+        android:id="@+id/scrlview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray"
+        android:scrollbarSize="2dp"
+        android:scrollbarThumbVertical="@color/base" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_gray"
+            android:orientation="vertical"
+             android:focusable="true"  
+            android:focusableInTouchMode="true"
+             >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/card_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/detail_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="97dp"
+                    android:layout_below="@id/card_iv"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:background="@color/white"
+                    android:minHeight="97dp" >
+
+                    <TextView
+                        android:id="@+id/seller_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="6dp"
+                        android:ellipsize="end"
+                        android:maxWidth="150dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_size_bigger" />
+
+                    <TextView
+                        android:id="@+id/funs_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/seller_name"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_toRightOf="@id/seller_name"
+                        android:text="fun"
+                        android:textColor="@color/text_tutor"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <CheckBox
+                        android:id="@+id/guanzhu_cb"
+                        android:layout_width="48dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/selector_btn_submit_line"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="+关注"
+                        android:textColor="@drawable/selector_text_font_basetowhite"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/guanzhu_cb"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_marginRight="@dimen/margin"
+                        android:layout_marginTop="4dp" >
+
+                        <TextView
+                            android:id="@+id/summary_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:ellipsize="end"
+                            android:textColor="@color/text_tutor"
+                            android:textSize="@dimen/text_size_small" />
+                    </ScrollView>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/seller_header_iv1"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginTop="173dp"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/sum_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_bar"
+                android:layout_marginTop="@dimen/margin"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="作品"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_title" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/margin"
+                android:paddingTop="@dimen/margin" >
+
+                <com.wukong.hezhi.ui.view.NoScrollGridview
+                    android:id="@+id/load_gdv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin"
+                    android:background="@color/white"
+                    android:cacheColorHint="@color/transparency"
+                    android:divider="@color/linecolor"
+                    android:dividerHeight="0px"
+                    android:horizontalSpacing="12dp"
+                    android:listSelector="@color/transparency"
+                    android:numColumns="2"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:scrollbars="none" >
+                </com.wukong.hezhi.ui.view.NoScrollGridview>
+
+                <ViewStub
+                    android:id="@+id/empty"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:inflatedId="@+id/pic_view_id_after_inflate"
+                    android:layout="@layout/view_data_empty" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.wukong.hezhi.ui.view.LoadMoreScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/activity_business_name.xml -->

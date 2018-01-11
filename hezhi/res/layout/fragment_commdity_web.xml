@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/myProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:progressDrawable="@drawable/shape_progress" />
+ <com.wukong.hezhi.ui.view.ObservableScrollView
+            android:id="@+id/sclv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/myProgressBar"
+            android:scrollbarSize="2dp"
+            android:scrollbarThumbVertical="@color/base" >
+            <LinearLayout
+                 android:id="@+id/layout_web"
+                 android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="2dp"
+        android:scrollbarThumbVertical="@color/base" />
+    </LinearLayout>
+    </com.wukong.hezhi.ui.view.ObservableScrollView>
+
+     <LinearLayout
+        android:id="@+id/empty_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" 
+        android:background="@color/bg_gray"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/empty_tips_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="没有更多内容"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_bigger"
+             />
+    </LinearLayout>
+    
+      <ImageView
+            android:id="@+id/top_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="invisible"
+            android:layout_above="@id/bottom_rl"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="@dimen/margin"
+            android:src="@drawable/icon_top"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@string/app_name" />
+</RelativeLayout>

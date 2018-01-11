@@ -1,0 +1,1 @@
+﻿{"httpCode":"200","body":{"name":"1","logoUrl":"https://hezhicloud20170113.oss-cn-shenzhen.aliyuncs.com/logo/28ea3cde-7735-4f34-ab20-02b1972876f3.gif","wishing":"1","sendName":"1","adTitle":"1","id":109},"promptMessage":"该产品正在参加活动"}

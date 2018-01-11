@@ -1,0 +1,12 @@
+<com.wukong.hezhi.ui.view.InnerScrollListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lv_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:cacheColorHint="@color/transparency"
+    android:divider="@color/linecolor"
+    android:dividerHeight="0px"
+    android:listSelector="@color/transparency"
+    android:scrollbars="none" >
+
+</com.wukong.hezhi.ui.view.InnerScrollListView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fouritems_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/selector_whitetogray_nocorner" >
+
+        <ImageView
+            android:id="@+id/article_iv"
+            android:layout_width="104dp"
+            android:layout_height="74dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_toLeftOf="@id/article_iv"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:layout_alignParentLeft="true"
+            android:text="文章标文章标题文章文章标题文章文章标题文章文章标题文章题文章"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/label_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:singleLine="true"
+            android:text="标签标签标签标签标签"
+            android:textColor="@color/hint"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/comment_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@id/article_iv"
+            android:text="评论"
+            android:textColor="@color/hint"
+            android:textSize="@dimen/text_size_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/linecolor"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/item_list_my_collection.xml -->

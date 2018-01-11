@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#22292c"
+                android:orientation="vertical">
+
+    <com.wukong.hezhi.function.imagepicker.view.CropImageView
+        android:id="@+id/cv_crop_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#22292c"/>
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <ImageView
+            android:id="@+id/cancel_bt"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="@dimen/margin"
+            android:paddingTop="@dimen/margin"
+            android:src="@drawable/icon_close2"
+            />
+
+
+        <ImageView
+            android:id="@+id/sure_bt"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/margin"
+            android:paddingTop="@dimen/margin"
+            android:src="@drawable/icon_sure1"
+            />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:paddingTop="@dimen/margin"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pay_ll"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v_list_heiht"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/selector_whitetogray_nocorner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="2"
+                android:text="支付管理"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin"
+                android:drawablePadding="@dimen/margin"
+                android:drawableRight="@drawable/icon_arrow_right"
+                android:text=""
+                android:textColor="@color/text_tutor"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/v_line_height"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="@color/linecolor"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/phone_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v_list_heiht"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/selector_whitetogray_nocorner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="2"
+                android:text="手机号码"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/bind_phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin"
+                android:drawablePadding="@dimen/margin"
+                android:drawableRight="@drawable/icon_arrow_right"
+                android:text="请绑定手机"
+                android:textColor="@color/text_tutor"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/v_line_height"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="@color/linecolor"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/socialcontact_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v_list_heiht"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/selector_whitetogray_nocorner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="2"
+                android:text="社交账号绑定"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin"
+                android:drawablePadding="@dimen/margin"
+                android:drawableRight="@drawable/icon_arrow_right"
+                android:text="绑定/解绑"
+                android:textColor="@color/text_tutor"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/v_line_height"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="@color/linecolor"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/activity_accoutn_safe.xml -->

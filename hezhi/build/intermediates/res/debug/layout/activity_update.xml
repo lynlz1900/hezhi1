@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/logo_iv"
+        android:layout_width="30dp"
+        android:scaleType="fitXY"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/icon_hezhi_logo2" />
+
+    <ProgressBar
+        android:id="@+id/download_pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="180dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/logo_iv"
+        android:layout_margin="@dimen/margin1"
+        android:progressDrawable="@drawable/shape_progress" />
+
+    <TextView
+        android:id="@+id/tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin"
+        android:text="@string/update_tip2"
+        android:textColor="@color/text_tutor"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:id="@+id/install_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margin"
+        android:background="@drawable/selector_btn_submit"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:paddingLeft="@dimen/margin1"
+        android:paddingRight="@dimen/margin1"
+        android:paddingTop="3dp"
+        android:text="@string/install"
+        android:textColor="@drawable/selector_text_font_whitetobase"
+        android:visibility="gone" />
+
+</RelativeLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/activity_update.xml -->

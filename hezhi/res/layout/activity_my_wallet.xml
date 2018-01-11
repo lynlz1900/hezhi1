@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@color/bg_gray"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_marginTop="44dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/icon_my_wallet" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:text="当前余额（元）"
+        android:textColor="@color/text_tutor"
+        android:textSize="@dimen/text_size_normal" />
+
+    <TextView
+        android:id="@+id/balance_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:textColor="@color/text_main"
+        android:text="0.00"
+        android:textSize="36dp" />
+
+    <Button
+        android:id="@+id/getcrash_bt"
+        style="@style/submiButtonStyle"
+        android:layout_marginTop="44dp"
+        android:text="提现" />
+
+</LinearLayout>

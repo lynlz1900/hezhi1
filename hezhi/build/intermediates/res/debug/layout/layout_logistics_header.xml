@@ -1,0 +1,14 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map_fl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="@dimen/margin"
+        android:background="@drawable/bg_transport" >
+    </LinearLayout>
+
+</FrameLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/layout_logistics_header.xml -->

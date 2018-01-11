@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape android:shape="rectangle">
+            <solid android:color="@color/btn_gray_press" />
+
+            <corners android:radius="@dimen/commonconners" />
+        </shape></item>
+    <item><layer-list>
+            <item><shape android:shape="rectangle">
+                    <solid android:color="@color/text_tutor" />
+
+                    <corners android:radius="@dimen/commonconners" />
+                </shape></item>
+            <item android:bottom="1px" android:left="1px" android:right="1px" android:top="1px"><shape android:shape="rectangle">
+                    <solid android:color="@color/white" />
+
+                    <corners android:radius="@dimen/commonconners" />
+                </shape></item>
+        </layer-list></item>
+
+</selector><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/drawable/selector_btn_submit_line2.xml -->

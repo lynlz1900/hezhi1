@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+   <TextView 
+        android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:textColor="@color/text_main"
+    			android:textSize="@dimen/text_size_normal"
+            android:text="@string/lock_sms_info"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+       /> 
+    
+   <TextView 
+       android:id="@+id/text_phone"
+        android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:textColor="@color/text_main"
+    			android:textSize="@dimen/text_size_normal"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+       /> 
+       
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="23dp"
+             >
+<TextView 
+       android:id="@+id/text_sms"
+        android:layout_width="wrap_content"
+    			android:layout_height="match_parent"
+    			android:textColor="@color/text_main"
+    			android:textSize="@dimen/text_size_normal"
+            android:paddingLeft="@dimen/margin"
+            android:paddingRight="20dp"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:background="@color/white"
+            android:text="@string/sms"
+       /> 
+            <EditText
+                android:id="@+id/phone_et"
+                android:layout_width="match_parent"
+    			android:layout_height="match_parent"
+    			android:background="@color/white"
+    			android:textColor="@color/text_main"
+    			android:textSize="@dimen/text_size_normal"
+    			android:singleLine="true"
+    			android:textCursorDrawable="@drawable/shape_editext_cursor"
+                android:inputType="phone"
+                android:maxLength="6" 
+                android:digits="1234567890"
+                android:layout_toLeftOf="@+id/text_getsms"
+                android:layout_toRightOf="@+id/text_sms"
+                android:hint="@string/lock_sms_input"
+                android:textColorHint="@color/hint"
+                />
+            
+            <CheckBox 
+                android:id="@+id/text_getsms"
+                android:layout_width="114dp"
+    			android:layout_height="match_parent"
+                android:background="@drawable/selector_redtogray_nocorner"
+                  android:gravity="center"
+                   android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal"
+                android:button="@null"
+                android:text="@string/lock_sms_get"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_smscode"
+             android:layout_width="match_parent"
+    			android:layout_height="44dp"
+    			android:textColor="@color/white"
+    			android:textSize="@dimen/text_size_bigger"
+            android:text="@string/submit"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/selector_btn_submit"
+             />
+
+</LinearLayout>

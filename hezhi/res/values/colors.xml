@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ========================主色调========================== -->
+    <!-- 主色调颜色 -->
+    <color name="base">#ff8b26</color>
+
+    <!-- ========================一般颜色类========================== -->
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 绿色 -->
+    <color name="green">#37ad63</color>
+    <!-- 红色 -->
+    <color name="red">#D93636</color>
+    <!-- 蓝色 -->
+    <color name="blue">#3399FF</color>
+    <!-- ========================透明颜色类========================== -->
+    <!-- 完全透明 -->
+    <color name="transparency">#00000000</color>
+    <!-- 灰色透明 -->
+    <color name="transparency_gray">#99F6F6F6</color>
+    <!-- 主色透明 -->
+    <color name="transparency_base">#22ff8b26</color>
+    <!-- 二维码透明 -->
+    <color name="transparency_mask">#BB000000</color>
+    <!-- ========================背景颜色类========================== -->
+    <!-- 灰色背景 -->
+    <color name="bg_gray">#F6F6F6</color>
+    <!-- 深灰色背景 -->
+    <color name="bg_gray_deep">#3C3F41</color>
+    <!-- 黑色透明背景 -->
+    <color name="bg_transparency_black">#77000000</color>
+
+    <!-- 白色透明背景 -->
+    <color name="bg_transparency_white">#88ffffff</color>
+    <!-- 红包背景颜色 -->
+    <color name="bg_redbag">#DC4C3F</color>
+    <!-- ========================文字颜色类========================== -->
+    <!-- 普通文本颜色 -->
+    <color name="text_normal">#88000000</color>
+    <!-- 正文文字，标题文字 -->
+    <color name="text_main">#333333</color>
+    <color name="text_red">#d93636</color>
+    <!-- <color name="text_red02">#ff9233</color> -->
+    <!-- 辅助次要文字 -->
+    <color name="text_tutor">#999999</color>
+    <!-- 辅助次要文字 -->
+    <color name="text_tutor2">#666666</color>
+    <!-- 说明文字，提示文字 -->
+    <color name="text_tip">#B3B3B3</color>
+    <!-- 重要信息文字 -->
+    <color name="text_important">#F74D4D</color>
+    <!-- 红包文字 -->
+    <color name="redbug_text">#f7dd94</color>
+    <!-- hint文字 -->
+    <color name="hint">#B5B5B5</color>
+    <!-- ========================按钮颜色类========================== -->
+    <!-- 主色调按下 -->
+    <color name="btn_base_press">#FF6600</color>
+    <!-- 绿色按下 -->
+    <color name="btn_green_press">#8ABB45</color>
+    <!-- 红色按下 -->
+    <color name="btn_red_press">#E24D4D</color>
+    <!-- 灰色按下 -->
+    <color name="btn_gray_press">#E5E5E5</color>
+    <!-- 不可用按钮 -->
+    <color name="btn_no_press">#E1E1E1</color>
+    <color name="toast_color">#39454D</color>
+    <!-- 红色按钮 -->
+    <color name="btn_red">#F74D4D</color>
+    <!-- ========================线条颜色类========================== -->
+    <!-- 线条极边框的颜色 -->
+    <color name="linecolor">#E5E5E5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="theme_body">#cc22292c</color>
+    <color name="status_bar">#303135</color>
+    <color name="top_bar">#9f556061</color>
+    <color name="transparent">#00000000</color>
+
+</resources>

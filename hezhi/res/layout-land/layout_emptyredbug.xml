@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:background="@drawable/shape_redbag" >
+
+        <ImageView
+            android:id="@+id/close_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="6dp"
+            android:src="@drawable/icon_close" />
+
+        <ImageView
+            android:id="@+id/company_logo_iv"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_open" />
+
+        <TextView
+            android:id="@+id/company_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/company_logo_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="慕思"
+            android:textColor="@color/redbug_text"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/redbug_tips_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/company_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:text="@string/empty_bag_tips"
+            android:textColor="@color/redbug_text"
+            android:textSize="12sp" />
+
+        <FrameLayout
+            android:id="@+id/ad_fr"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/margin"
+            android:visibility="invisible" >
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

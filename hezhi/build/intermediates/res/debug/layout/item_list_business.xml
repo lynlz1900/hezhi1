@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fouritems_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:orientation="vertical"
+        android:paddingBottom="2dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_btn_submit_line3"
+            android:padding="1px" >
+
+            <com.wukong.hezhi.ui.view.RatioLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:picRatio="1.78" >
+
+                <ImageView
+                    android:id="@+id/card_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+            </com.wukong.hezhi.ui.view.RatioLayout>
+
+           <ImageView
+                android:id="@+id/ar_iv"
+                android:layout_width="36dp"
+                android:layout_height="24dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/icon_live_ar" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/v_line_height"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@color/linecolor"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/margin"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/item_list_business.xml -->

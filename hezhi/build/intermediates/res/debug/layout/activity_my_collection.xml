@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_weight="2"
+        android:background="@color/white" >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swprf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" >
+
+            <com.wukong.hezhi.ui.view.LoadMoreListView
+                android:id="@+id/lv_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_gray"
+                android:cacheColorHint="@color/transparency"
+                android:divider="@color/linecolor"
+                android:dividerHeight="1px"
+                android:listSelector="@color/transparency"
+                android:scrollbars="none" >
+            </com.wukong.hezhi.ui.view.LoadMoreListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <ViewStub
+            android:id="@+id/empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout="@layout/view_data_empty" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/activity_my_collection.xml -->

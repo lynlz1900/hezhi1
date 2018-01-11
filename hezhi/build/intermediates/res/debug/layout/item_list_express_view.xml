@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fouritems_ll"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white"
+    android:minHeight="80dp"
+    android:orientation="horizontal"
+    android:weightSum="7" 
+    >
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5" >
+
+        <RelativeLayout
+            android:id="@+id/time_line"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin" >
+
+            <View
+                android:id="@+id/line_view"
+                android:layout_width="@dimen/v_line_height"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                layout="@layout/view_line_vetical"
+                android:background="@color/linecolor" />
+
+            <View
+                android:id="@+id/dot_view"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/shape_dot" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/wuliu_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_toRightOf="@id/time_line"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/item_list_express_view.xml -->

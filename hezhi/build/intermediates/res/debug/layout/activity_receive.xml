@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray" >
+
+    <LinearLayout
+        android:id="@+id/qurrey_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/title_bar"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_weight="4"
+            android:background="@drawable/shape_template_corners"
+            android:orientation="horizontal"
+            android:weightSum="8" >
+
+            <LinearLayout
+                android:id="@+id/company_ll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:src="@drawable/icon_arrow_down" />
+
+                <TextView
+                    android:id="@+id/company_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/logistics_company"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:background="@color/linecolor" />
+
+            <EditText
+                android:id="@+id/oddnumber_et"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="5"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:singleLine="true"
+                android:text=""
+                android:hint="快递单号"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/qurrey_tv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/title_bar"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_submit"
+            android:gravity="center"
+            android:text="@string/qurrey"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qurrey_ll"
+        android:background="@color/white"
+        android:cacheColorHint="@color/transparency"
+        android:divider="@color/linecolor"
+        android:dividerHeight="0px"
+        android:listSelector="@color/transparency"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/activity_receive.xml -->

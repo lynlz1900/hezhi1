@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:background="#FF9900" >
+
+        <TextView
+            android:id="@+id/header_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/icon_back_white"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin"
+            android:paddingRight="@dimen/margin"
+            android:textColor="@color/text_normal" />
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/invite_friend"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_bigger" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/header_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin"
+            android:paddingRight="@dimen/margin"
+            android:text="@string/about"
+            android:textColor="@color/text_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_ivtfriend" >
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/share_wechat_tv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/margin3"
+                android:background="@drawable/icon_ivt_wechat"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_tutor2"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/share_wechatcircle_tv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/margin3"
+                android:background="@drawable/icon_ivt_wechatcircle"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_tutor2"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/share_qq_tv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/margin3"
+                android:background="@drawable/icon_ivt_qq"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_tutor2"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/share_qzone_tv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/margin3"
+                android:background="@drawable/icon_ivt_qzone"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_tutor2"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/activity_invite_friend.xml -->

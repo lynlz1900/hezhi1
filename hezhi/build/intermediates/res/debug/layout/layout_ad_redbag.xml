@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ad_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparency" >
+
+    <ImageView
+        android:id="@+id/ad_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_empty" />
+
+    <ImageView
+        android:id="@+id/close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ad_iv"
+        android:layout_alignTop="@+id/ad_iv"
+        android:padding="@dimen/margin"
+        android:src="@drawable/icon_close" />
+
+    <TextView
+        android:id="@+id/tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin"
+        android:text="广告语"
+        android:textColor="@color/base"
+        android:textSize="@dimen/text_size_bigger" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="广告"
+        android:background="@color/bg_transparency_black"
+        android:textColor="@color/white" />
+
+</RelativeLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/layout_ad_redbag.xml -->

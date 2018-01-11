@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/text_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_edittext2"
+        android:maxLength="100"
+        android:minHeight="@dimen/bottom_bar"
+        android:textColor="@color/text_main"
+        android:textCursorDrawable="@drawable/shape_editext_cursor"
+        android:textSize="@dimen/text_size_normal"/>
+
+    <TextView
+        android:id="@+id/word_count_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="right"
+        android:padding="@dimen/margin"
+        android:textColor="@color/text_tutor"
+        android:textSize="@dimen/text_size_small"/>
+</LinearLayout>

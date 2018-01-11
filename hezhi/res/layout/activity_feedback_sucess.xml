@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/icon_feedback_sucess" />
+
+    <TextView
+        android:id="@+id/phone_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:text="反馈成功"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_size_bigger" />
+
+    <TextView
+        android:id="@+id/change_phone_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:text="你的反馈我们会认真查看，并尽快修复及完善，感谢你对盒知一如既往的支持"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_size_normal" />
+
+    <Button
+        android:id="@+id/close_bt"
+        style="@style/submiButtonStyle"
+        android:text="@string/close_tv" />
+
+</LinearLayout>

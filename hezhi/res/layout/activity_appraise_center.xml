@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_gray"
+              android:orientation="vertical"
+              tools:context="com.wukong.hezhi.ui.activity.TraceActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/head_ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_viewpager_instruct"
+        android:orientation="horizontal"
+        >
+
+        <RadioGroup
+            android:id="@+id/main_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_marginBottom="1px"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/main_rb_appraiseing"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/title_bar"
+                android:background="@drawable/selector_viewpager_instruct"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_normal"
+                android:text="@string/appraise_being"
+                android:textColor="@drawable/selector_gray_to_black"
+                />
+
+
+            <RadioButton
+                android:id="@+id/main_rb_appraised"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/title_bar"
+                android:layout_marginLeft="48dp"
+                android:background="@drawable/selector_viewpager_instruct"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_normal"
+                android:text="@string/appraise_complete"
+                android:textColor="@drawable/selector_gray_to_black"
+                />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

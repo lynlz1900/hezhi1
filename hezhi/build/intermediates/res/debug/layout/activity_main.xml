@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    tools:context="com.wukong.hezhi.ui.activity.TraceActivity" >
+
+    <RelativeLayout
+        android:id="@+id/main_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_bar"
+        android:layout_alignParentBottom="true" >
+
+        <RadioGroup
+            android:id="@+id/main_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_bar"
+            android:background="@color/bg_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/hezhi_rb"
+                style="@style/RadioButton2"
+                android:drawableTop="@drawable/selector_pic_customization"
+                android:text="@string/customiation" />
+
+            <RadioButton
+                android:id="@+id/distinguish_rb"
+                style="@style/RadioButton2"
+                android:drawableTop="@drawable/selector_pic_dis"
+                android:text="@string/distinguish" />
+
+            <RadioButton
+                android:id="@+id/live_rb"
+                style="@style/RadioButton2"
+                android:drawableTop="@drawable/selector_pic_live"
+                android:text="@string/buy" />
+
+            <RadioButton
+                android:id="@+id/find_rb"
+                style="@style/RadioButton2"
+                android:drawableTop="@drawable/selector_pic_find"
+                android:text="@string/recieve" />
+
+            <RadioButton
+                android:id="@+id/person_rb"
+                style="@style/RadioButton2"
+                android:drawableTop="@drawable/selector_pic_me"
+                android:text="@string/me" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_bar"
+            android:background="@color/transparency"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/red_point0"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/shape_dot_red"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000" >
+
+                <ImageView
+                    android:id="@+id/red_point1"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/shape_dot_red"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/red_point2"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/shape_dot_red"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000" >
+
+                <ImageView
+                    android:id="@+id/red_point3"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/shape_dot_red"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/red_point4"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/shape_dot_red"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.wukong.hezhi.ui.view.NoScrollViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_rl" >
+    </com.wukong.hezhi.ui.view.NoScrollViewPager>
+
+</RelativeLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/activity_main.xml -->

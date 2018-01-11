@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/input_et"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@color/white"
+            android:gravity="left"
+            android:hint="说点什么吧..."
+            android:maxLength="30"
+            android:minHeight="60dp"
+            android:padding="@dimen/margin"
+            android:singleLine="false" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/word_count_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="right"
+            android:paddingBottom="@dimen/margin1"
+            android:paddingRight="@dimen/margin"
+            android:textColor="@color/text_tutor"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:text="视频/图片"
+            android:textColor="@color/text_tutor"
+            android:textSize="@dimen/text_size_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="@dimen/margin"
+                android:background="@color/bg_gray" >
+
+                <ImageView
+                    android:id="@+id/add_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    android:src="@drawable/icon_addpic" />
+
+                <ProgressBar
+                    android:id="@+id/loading_pb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminateDrawable="@drawable/shape_ring_progress"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/pic_bg_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:id="@+id/pic_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/play_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="20dp"
+                        android:src="@drawable/icon_play"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin" >
+
+        <Button
+            android:id="@+id/submit_bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_btn_submit"
+            android:enabled="false"
+            android:text="@string/preview"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_bigger" />
+
+        <ProgressBar
+            android:id="@+id/upload_pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:progressDrawable="@drawable/shape_progress2"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/preview_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/preview"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_bigger"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/activity_upload.xml -->

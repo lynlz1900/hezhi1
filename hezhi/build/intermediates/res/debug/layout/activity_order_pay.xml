@@ -1,0 +1,200 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@color/white"
+            android:paddingBottom="20dp"
+            android:paddingLeft="@dimen/margin"
+            android:paddingRight="@dimen/margin"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/order_dis_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单金额:"
+                android:textColor="@color/text_tutor2"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/order_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_toRightOf="@id/order_dis_tv"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/add_dis_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order_dis_tv"
+                android:layout_marginTop="@dimen/margin2"
+                android:text="收货地址:"
+                android:textColor="@color/text_tutor2"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/add_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order_tv"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginTop="@dimen/margin2"
+                android:layout_toRightOf="@id/add_dis_tv"
+                android:textColor="@color/text_tutor2"
+                android:textSize="@dimen/text_size_normal" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:text="@string/select_pay_way"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size_normal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <include layout="@layout/view_line_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="78dp"
+                        android:background="@color/white"
+                        android:padding="@dimen/margin" >
+
+                        <ImageView
+                            android:id="@+id/wx_iv"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/icon_pay_wx" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@id/wx_iv"
+                            android:text="@string/pay_wx"
+                            android:textColor="@color/text_main"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="@dimen/margin"
+                            android:layout_toRightOf="@id/wx_iv"
+                            android:text="@string/recommand_pay_wx"
+                            android:textColor="@color/text_tutor"
+                            android:textSize="@dimen/text_size_small" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/v_line_height"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_marginRight="@dimen/margin"
+                        android:background="@color/linecolor" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="78dp"
+                        android:background="@color/white"
+                        android:padding="@dimen/margin" >
+
+                        <ImageView
+                            android:id="@+id/zhifubao_iv"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/icon_pay_zhifubao" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@id/zhifubao_iv"
+                            android:text="@string/pay_zhifubao"
+                            android:textColor="@color/text_main"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="@dimen/margin"
+                            android:layout_toRightOf="@id/zhifubao_iv"
+                            android:text="@string/recommand_pay_zhifubao"
+                            android:textColor="@color/text_tutor"
+                            android:textSize="@dimen/text_size_small" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="158dp"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/wx_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_check"
+                        android:checked="true"
+                        android:paddingRight="@dimen/margin" />
+
+                    <RadioButton
+                        android:id="@+id/zhifubao_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_check"
+                        android:paddingRight="@dimen/margin" />
+                </RadioGroup>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pay_bt"
+        style="@style/submiButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_btn_submit"
+        android:text="@string/confirm" 
+        android:gravity="center"
+        />
+
+</RelativeLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/activity_order_pay.xml -->

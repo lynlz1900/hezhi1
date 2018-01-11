@@ -1,0 +1,142 @@
+﻿	{
+	    "httpCode": "200",
+	    "body": {
+	        "page": 1,
+	        "record": 10,
+	        "countPage": 1,
+	        "countRecord": 10,
+	        "dataList": [
+	            {
+	                "productName": "星巴克与您,不止于咖啡星巴克的产品",
+	                "pictureUrl": "https://hezhicloudtest.oss-cn-shenzhen.aliyuncs.com/TEST/fa93b895-0677-4ac1-b136-0320140196fb.jpg",
+	                "ar": false,
+	                "resourceType": "MP4",
+	                "costPrice": 50,
+	                "price": 157,
+	                "targetId": "292eec3084984e1bb5903cd3d077af05",
+	                "hasRedPack": true,
+	                "businessId": 65,
+	                "receiveMark": "2",
+	                "urlHttp": "https://hezhicloudtest.oss-cn-shenzhen.aliyuncs.com/TEST/cde976b8-a86a-488d-a225-abec697c9da8.mp4"
+	            },
+	            {
+	                "productName": "茅台茅台茅台茅台茅台茅台茅台茅台茅台茅台",
+	                "pictureUrl": "https://hezhicloudtest.oss-cn-shenzhen.aliyuncs.com/TEST/84ddafb9-2915-42f2-8842-908cf5c8d242.jpg",
+	                "ar": true,
+	                "resourceType": "UNITY3D",
+	                "costPrice": 35,
+	                "price": 163,
+	                "targetId": "ca648f9c7784468b9ef4e20179b9855f",
+	                "hasRedPack": true,
+	                "businessId": 65,
+	                "receiveMark": "2",
+	                "urlHttp": ""
+	            },
+	            {
+	                "productName": "慕思床垫002",
+	                "pictureUrl": "https://hezhicloudtest.oss-cn-shenzhen.aliyuncs.com/TEST/7e9ec034-a950-425d-80fd-9fe55b4ebc69.png",
+	                "ar": true,
+	                "resourceType": "UNITY3D",
+	                "costPrice": 81,
+	                "price": 159,
+	                "targetId": "6feae671870e4cf283271a06e9109714",
+	                "hasRedPack": true,
+	                "businessId": 65,
+	                "receiveMark": "2",
+	                "urlHttp": ""
+	            },
+	            {
+	                "productName": "烤鸭来自全聚德",
+	                "pictureUrl": "https://hezhicloudtest.oss-cn-shenzhen.aliyuncs.com/TEST/7ab71703-4b69-4d17-8a5e-2bf446df1190.jpg",
+	                "ar": true,
+	                "resourceType": "UNITY3D",
+	                "costPrice": 65,
+	                "price": 161,
+	                "targetId": "df1b3ce3eb734a8c97d125d5ac1df2be",
+	                "hasRedPack": true,
+	                "businessId": 65,
+	                "receiveMark": "2",
+	                "urlHttp": ""
+	            },
+	            {
+	                "productName": "飞天茅台",
+	                "pictureUrl": "https://hezhicloudtest.oss-cn-shenzhen.aliyuncs.com/TEST/512b268dcc854059ac1acadcf967015d.jpg",
+	                "ar": true,
+	                "resourceType": "UNITY3D",
+	                "costPrice": 24,
+	                "price": 166,
+	                "targetId": "dc7cd4d8b3594662adddc69ad398a707",
+	                "hasRedPack": true,
+	                "businessId": 61,
+	                "receiveMark": "2",
+	                "urlHttp": ""
+	            },
+	            {
+	                "productName": "慕思宣传",
+	                "pictureUrl": "https://hezhicloudtest.oss-cn-shenzhen.aliyuncs.com/TEST/5e324ccb-6e2d-47fe-936e-5fc91ebc3feb.jpg",
+	                "ar": false,
+	                "resourceType": "MP4",
+	                "costPrice": 15,
+	                "price": 155,
+	                "targetId": "07022c9317a649b59f05d6d68c6bd422",
+	                "hasRedPack": false,
+	                "businessId": 65,
+	                "receiveMark": "2",
+	                "urlHttp": "https://hezhicloudtest.oss-cn-shenzhen.aliyuncs.com/TEST/7a35ca1d-c954-450a-9125-b0df8aeb5af9.mp4"
+	            },
+	            {
+	                "productName": "慕思床垫072",
+	                "pictureUrl": "https://hezhicloudtest.oss-cn-shenzhen.aliyuncs.com/TEST/12dbe906-fbd6-4298-874e-6025fdf26d35.jpg",
+	                "ar": true,
+	                "resourceType": "UNITY3D",
+	                "costPrice": 37,
+	                "price": 160,
+	                "targetId": "c9d5c16686234d6ca3468260a5b74ac6",
+	                "hasRedPack": true,
+	                "businessId": 65,
+	                "receiveMark": "2",
+	                "urlHttp": ""
+	            },
+	            {
+	                "productName": "旺仔牛奶",
+	                "pictureUrl": "https://hezhicloud.oss-cn-shenzhen.aliyuncs.com/TEST/0878b292-bb3b-4d4e-b884-cb3c884be97e.jpg",
+	                "ar": false,
+	                "resourceType": "MP4",
+	                "costPrice": 197,
+	                "price": 72,
+	                "targetId": "1e18de03d45842e29c2c4762de4357c1",
+	                "hasRedPack": true,
+	                "businessId": 61,
+	                "receiveMark": "2",
+	                "urlHttp": "https://hezhicloud.oss-cn-shenzhen.aliyuncs.com/TEST/264a1893-b07c-4d53-88c4-8c62484d7cc5.mp4"
+	            },
+	            {
+	                "productName": "尝尝欢笑常常麦当劳",
+	                "pictureUrl": "https://hezhicloudtest.oss-cn-shenzhen.aliyuncs.com/TEST/babae598-d3fa-4232-8eeb-c0c9b36046e7.jpg",
+	                "ar": false,
+	                "resourceType": "MP4",
+	                "costPrice": 18,
+	                "price": 154,
+	                "targetId": "e813be148dff4d1faf85928791e3aca8",
+	                "hasRedPack": true,
+	                "businessId": 65,
+	                "receiveMark": "2",
+	                "urlHttp": "https://hezhicloudtest.oss-cn-shenzhen.aliyuncs.com/TEST/6347ecb6-7265-4456-98cf-a266461ba09e.mp4"
+	            },
+	            {
+	                "productName": "生命如水，景田百岁山",
+	                "pictureUrl": "https://hezhicloudtest.oss-cn-shenzhen.aliyuncs.com/TEST/1b2ceca3-aebd-46d0-8398-c4ea9621c4b2.jpg",
+	                "ar": false,
+	                "resourceType": "MP4",
+	                "costPrice": 10,
+	                "price": 149,
+	                "targetId": "2d70cd5cc9fe494c8dcfd1365466f960",
+	                "hasRedPack": true,
+	                "businessId": 65,
+	                "receiveMark": "2",
+	                "urlHttp": "https://hezhicloudtest.oss-cn-shenzhen.aliyuncs.com/TEST/b809c9be-c3a5-4e1f-b009-09622410fa68.mp4"
+	            }
+	        ]
+	    },
+	    "promptMessage": "成功"
+	}

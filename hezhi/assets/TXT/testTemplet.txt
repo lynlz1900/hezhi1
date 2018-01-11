@@ -1,0 +1,64 @@
+﻿	{
+	    "httpCode": "200",
+	    "body": {
+	        "page": 1,
+	        "record": 10,
+	        "countPage": 1,
+	        "countRecord": 10,
+	        "dataList": [
+	            {
+	                "id": 1001,
+	                "templetUrl": "https://hezhi-dev.oss-cn-shenzhen.aliyuncs.com/img_final/bg_templet.png"
+	            },
+	            {
+	                "id": 1001,
+	                "templetUrl": "https://hezhi-dev.oss-cn-shenzhen.aliyuncs.com/img_final/bg_templet.png"
+	            },
+	            {
+	                "id": 1001,
+	                "templetUrl": "https://hezhi-dev.oss-cn-shenzhen.aliyuncs.com/img_final/bg_templet.png"
+	            },
+	            {
+	                "id": 1001,
+	                "templetUrl": "https://hezhi-dev.oss-cn-shenzhen.aliyuncs.com/img_final/bg_templet.png"
+	            },
+	            {
+	                "id": 1001,
+	                "templetUrl": "https://hezhi-dev.oss-cn-shenzhen.aliyuncs.com/img_final/bg_templet.png"
+	            },
+	            {
+	                "id": 1001,
+	                "templetUrl": "https://hezhi-dev.oss-cn-shenzhen.aliyuncs.com/img_final/bg_templet.png"
+	            },
+	            {
+	                "id": 1001,
+	                "templetUrl": "https://hezhi-dev.oss-cn-shenzhen.aliyuncs.com/img_final/bg_templet.png"
+	            },
+	            {
+	                "id": 1001,
+	                "templetUrl": "https://hezhi-dev.oss-cn-shenzhen.aliyuncs.com/img_final/bg_templet.png"
+	            },
+	            {
+	                "id": 1001,
+	                "templetUrl": "https://hezhi-dev.oss-cn-shenzhen.aliyuncs.com/img_final/bg_templet.png"
+	            },
+	            {
+	                "id": 1001,
+	                "templetUrl": "https://hezhi-dev.oss-cn-shenzhen.aliyuncs.com/img_final/bg_templet.png"
+	            },
+	            {
+	                "id": 1001,
+	                "templetUrl": "https://hezhi-dev.oss-cn-shenzhen.aliyuncs.com/img_final/bg_templet.png"
+	            },
+	            {
+	                "id": 1001,
+	                "templetUrl": "https://hezhi-dev.oss-cn-shenzhen.aliyuncs.com/img_final/bg_templet.png"
+	            },
+	            {
+	                "id": 1001,
+	                "templetUrl": "https://hezhi-dev.oss-cn-shenzhen.aliyuncs.com/img_final/bg_templet.png"
+	            }
+	        ]
+	    },
+	    "promptMessage": "成功"
+	}

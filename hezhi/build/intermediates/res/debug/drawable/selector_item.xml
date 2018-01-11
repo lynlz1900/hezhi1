@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 普通无圆角选择器 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/btn_gray_press" android:state_pressed="true"/>
+ <!-- pressed -->
+    <item android:drawable="@android:color/white" android:state_focused="true"/>
+ <!-- focused -->
+    <item android:drawable="@android:color/white"/>
+ <!-- default -->
+
+</selector><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/drawable/selector_item.xml -->

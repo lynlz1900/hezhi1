@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" 
+    >
+    
+    <ImageView
+        android:id="@+id/header"
+          android:layout_width="match_parent"
+    android:layout_height="6dp"
+    android:background="@drawable/bg_address_header"
+    android:contentDescription="@string/app_name"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:layout_above="@+id/footer"
+    android:layout_below="@+id/header"
+    android:layout_marginBottom="18dp"
+    >
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" 
+        >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swprf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" >
+
+            <com.wukong.hezhi.ui.view.LoadMoreListView
+                android:id="@+id/lv_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_gray"
+                android:cacheColorHint="@color/transparency"
+                android:divider="@color/linecolor"
+                android:dividerHeight="1px"
+                android:listSelector="@color/transparency"
+                android:scrollbars="none"
+                 >
+            </com.wukong.hezhi.ui.view.LoadMoreListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <ViewStub
+            android:id="@+id/empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout="@layout/view_data_empty"
+             />
+    </RelativeLayout>
+</LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp"
+             android:background="@color/bg_gray"
+        >
+         <TextView 
+            android:id="@+id/btn_address_add"
+            android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+         android:background="@drawable/selector_btn_submit_line"
+         android:text="@string/address_create"
+         android:textColor="@drawable/selector_text_font_basetowhite"
+         android:textSize="@dimen/text_size_bigger"
+          android:gravity="center"
+            />
+    </LinearLayout>
+</RelativeLayout>

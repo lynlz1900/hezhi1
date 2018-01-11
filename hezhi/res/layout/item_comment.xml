@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fouritems_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/margin" >
+
+    <ImageView
+        android:id="@+id/header_iv"
+        android:layout_width="36dp"
+        android:scaleType="fitXY"
+        android:layout_height="36dp"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/nickname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin4"
+        android:layout_alignTop="@id/header_iv"
+        android:layout_toRightOf="@id/header_iv"
+        android:text="大三元"
+        android:textColor="#7aa2cc"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:id="@+id/comment_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nickname_tv"
+        android:layout_marginLeft="@dimen/margin4"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_toRightOf="@id/header_iv"
+        android:text="我感觉这东西很好玩我感觉这东西很好玩我感觉这东西很好玩我感觉这东西"
+        android:textColor="@color/text_tutor"
+        android:textSize="@dimen/text_size_normal" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/nickname_tv"
+        android:layout_marginRight="@dimen/margin"
+        android:paddingBottom="@dimen/margin"
+        android:text="2017"
+        android:textColor="@color/text_tutor"
+        android:textSize="11dp" />
+
+</RelativeLayout>

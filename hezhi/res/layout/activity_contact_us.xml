@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/qq_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v_list_heiht"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/selector_whitetogray_nocorner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/icon_height"
+                android:layout_height="@dimen/icon_height"
+                android:layout_marginLeft="@dimen/margin"
+                android:background="@drawable/icon_safe"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="2"
+                android:text="官方QQ群"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin"
+                android:drawablePadding="@dimen/margin"
+                android:text="226345666"
+                android:textColor="@color/text_tutor"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/v_line_height"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="@color/linecolor"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wechat_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v_list_heiht"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/selector_whitetogray_nocorner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/icon_height"
+                android:layout_height="@dimen/icon_height"
+                android:layout_marginLeft="@dimen/margin"
+                android:background="@drawable/icon_safe"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="2"
+                android:text="官方微信号"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin"
+                android:drawablePadding="@dimen/margin"
+                android:text="hezhi_pkgiot"
+                android:textColor="@color/text_tutor"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/v_line_height"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="@color/linecolor"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/phone_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v_list_heiht"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/selector_whitetogray_nocorner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/icon_height"
+                android:layout_height="@dimen/icon_height"
+                android:layout_marginLeft="@dimen/margin"
+                android:background="@drawable/icon_safe"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="2"
+                android:text="热线客服"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin"
+                android:drawablePadding="@dimen/margin"
+                android:drawableRight="@drawable/icon_arrow_right"
+                android:text="0755-26907002"
+                android:textColor="@color/text_tutor"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/v_line_height"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="@color/linecolor"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#22292c"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <ImageView
+            android:id="@+id/close_bt"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignParentTop="true"
+            android:paddingTop="@dimen/margin"
+            android:paddingLeft="@dimen/margin"
+            android:src="@drawable/icon_close2"
+            />
+
+        <ImageView
+            android:id="@+id/reset_bt"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/margin"
+            android:src="@drawable/icon_reset1"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/sure_bt"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignParentRight="true"
+            android:paddingTop="@dimen/margin"
+            android:paddingRight="@dimen/margin"
+            android:src="@drawable/icon_sure1"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/pic_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <View
+                android:id="@+id/bg_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/pic_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:visibility="invisible"
+                />
+
+            <ImageView
+                android:id="@+id/templet_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                />
+
+            <ImageView
+                android:id="@+id/kuang_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_kuang"
+                android:visibility="invisible"
+                />
+
+            <ImageView
+                android:id="@+id/plus_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_plus_yellow"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:id="@+id/dicr_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/click_input"
+                android:textColor="@color/base"
+                android:textSize="@dimen/text_size_normal"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

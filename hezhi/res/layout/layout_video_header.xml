@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/transparency"
+    android:minHeight="45dp" >
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_bar"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="1dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="12"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_bigger" />
+
+    <TextView
+        android:id="@+id/header_left"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="1dp"
+        android:drawableLeft="@drawable/icon_back_white"
+        android:gravity="center"
+        android:minWidth="@dimen/title_bar"
+        android:paddingLeft="@dimen/margin"
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/text_size_normal"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/header_right"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_bar"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:minWidth="@dimen/title_bar"
+        android:paddingLeft="@dimen/margin"
+        android:paddingRight="@dimen/margin"
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/text_size_normal"
+        android:visibility="visible" />
+
+</RelativeLayout>

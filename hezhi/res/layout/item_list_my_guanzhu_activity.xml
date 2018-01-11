@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fouritems_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@drawable/selector_whitetogray_nocorner" >
+
+        <TextView
+            android:id="@+id/app_sum_tv"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:gravity="center"
+            android:text="10\n作品"
+            android:textColor="@color/text_tutor"
+            android:textSize="10sp" />
+
+        <RelativeLayout
+            android:id="@+id/icon_rl"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/selector_whitetogray_nocorner"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/card_iv"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_empty" />
+
+            <ImageView
+                android:id="@+id/red_point"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/shape_dot_red"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/icon_rl"
+            android:layout_toLeftOf="@id/app_sum_tv"
+            android:layout_toRightOf="@id/icon_rl"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_size_bigger" />
+
+        <TextView
+            android:id="@+id/title_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/icon_rl"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_toRightOf="@id/title_tv"
+            android:textColor="@color/base"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/summary_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/icon_rl"
+            android:layout_toLeftOf="@id/app_sum_tv"
+            android:layout_toRightOf="@id/icon_rl"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="床前明月光，疑是地上霜。举头望明月，低头思故乡。"
+            android:textColor="@color/text_tutor"
+            android:textSize="@dimen/text_size_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/linecolor"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

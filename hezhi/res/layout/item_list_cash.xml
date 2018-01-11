@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fouritems_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp" >
+
+        <TextView
+            android:id="@+id/money_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:text="10"
+            android:textColor="@color/text_main"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/icon_iv"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_empty" />
+
+        <TextView
+            android:id="@+id/redbag_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/icon_iv"
+            android:layout_toRightOf="@id/icon_iv"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/redbag_tip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/redbag_tip"
+            android:layout_alignTop="@id/icon_iv"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_toRightOf="@id/redbag_tip"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@id/money_tv"
+            android:singleLine="true"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/base"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/icon_iv"
+            android:layout_toRightOf="@id/icon_iv"
+            android:text="2017.3.31 10:18"
+            android:textColor="@color/text_tutor"
+            android:textSize="@dimen/text_size_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/linecolor"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

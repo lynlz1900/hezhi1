@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--viewpager引导的中间侧选择器（直角角）  -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true"><shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+        </shape></item>
+    <item><layer-list>
+            <item><shape android:shape="rectangle">
+                    <solid android:color="@color/white" />
+                </shape></item>
+            <item android:bottom="1dp" android:left="0dp" android:right="0dp" android:top="1dp"><shape android:shape="rectangle">
+                    <solid android:color="@color/base" />
+                </shape></item>
+        </layer-list></item>
+
+</selector>

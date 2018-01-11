@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_web"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar"
+            android:background="@color/white"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="12"
+                android:singleLine="true"
+                android:text="@string/cumstom_preview"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_bigger" />
+
+            <TextView
+                android:id="@+id/header_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/selector_whitetogray_nocorner"
+                android:drawableLeft="@drawable/selector_arrow_left"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin"
+                android:paddingRight="@dimen/margin"
+                android:textColor="@color/text_normal" />
+
+            <TextView
+                android:id="@+id/header_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin"
+                android:background="@drawable/selector_btn_cancel"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/v_line_height"
+                android:layout_alignParentBottom="true"
+                android:background="@color/linecolor" />
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarSize="2dp"
+            android:scrollbarThumbVertical="@color/base" />
+    </LinearLayout>
+
+</RelativeLayout>

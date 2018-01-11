@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+    tools:context="com.wukong.hezhi.ui.activity.TraceActivity" 
+    >
+
+     <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/empty_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_empty_hezhi" />
+
+        <TextView
+            android:id="@+id/empty_tips_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/commodity_delete"
+            android:textColor="@color/text_normal" />
+    </LinearLayout>
+    
+     <RelativeLayout
+         android:id="@+id/content_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+            android:id="@+id/detail_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_rl" >
+        </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/bottom_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_bar"
+            android:layout_alignParentBottom="true" >
+        </RelativeLayout>
+</RelativeLayout>
+
+</LinearLayout>

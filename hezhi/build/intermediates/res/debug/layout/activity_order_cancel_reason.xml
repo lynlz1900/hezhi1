@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+       xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/customization_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray" 
+    android:orientation="vertical"
+    >
+
+    <ScrollView 
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:layout_above="@+id/layout_footer"
+    android:layout_marginBottom="@dimen/margin"
+    android:layout_alignParentTop="true"
+    >
+    <LinearLayout
+         android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_gray" 
+    android:orientation="vertical" >
+         
+         <TextView 
+            android:layout_width="match_parent"
+        android:layout_height="33dp"
+         android:text="@string/order_cancel_reason"
+         android:textColor="@color/text_tutor"
+         android:textSize="@dimen/text_size_small"
+         android:layout_marginLeft="@dimen/margin"
+         android:gravity="center_vertical"
+            />
+         
+        
+         
+          <RelativeLayout 
+              android:id="@+id/layout_order_reason01"
+               android:layout_width="match_parent"
+    	android:layout_height="@dimen/title_bar"
+    	android:background="@drawable/selector_whitetogray_nocorner"
+    	android:paddingLeft="@dimen/margin"
+    	android:paddingRight="@dimen/margin"
+    	>
+              <TextView 
+                    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/order_cancel_reason01"
+    	android:textColor="@color/text_main"
+    	android:textSize="@dimen/text_size_normal"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentLeft="true"
+              android:layout_toLeftOf="@+id/image_right01"
+    	android:layout_marginRight="5dp"
+    	android:gravity="left"
+                  />
+              
+              <ImageView 
+                  android:id="@+id/image_right01"
+                    android:layout_width="22dp"
+    	android:layout_height="22dp"
+    	android:src="@drawable/icon_checked_on"
+    	android:contentDescription="@string/app_name"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentRight="true"
+    	android:visibility="gone"
+                  />
+          </RelativeLayout>
+     <include layout="@layout/view_line_horizontal" 
+         />
+          <RelativeLayout 
+              android:id="@+id/layout_order_reason02"
+               android:layout_width="match_parent"
+    	android:layout_height="@dimen/title_bar"
+    	android:background="@drawable/selector_whitetogray_nocorner"
+    	android:paddingLeft="@dimen/margin"
+    	android:paddingRight="@dimen/margin"
+    	>
+              <TextView 
+                    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/order_cancel_reason02"
+    	android:textColor="@color/text_main"
+    	android:textSize="@dimen/text_size_normal"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentLeft="true"
+              android:layout_toLeftOf="@+id/image_right02"
+    	android:layout_marginRight="5dp"
+    	android:gravity="left"
+                  />
+              
+              <ImageView 
+                  android:id="@+id/image_right02"
+                    android:layout_width="22dp"
+    	android:layout_height="22dp"
+    	android:src="@drawable/icon_checked_on"
+    	android:contentDescription="@string/app_name"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentRight="true"
+    	android:visibility="gone"
+                  />
+          </RelativeLayout>
+           <include layout="@layout/view_line_horizontal" 
+         />
+          <RelativeLayout 
+              android:id="@+id/layout_order_reason03"
+               android:layout_width="match_parent"
+    	android:layout_height="@dimen/title_bar"
+    	android:background="@drawable/selector_whitetogray_nocorner"
+    	android:paddingLeft="@dimen/margin"
+    	android:paddingRight="@dimen/margin"
+    	>
+              <TextView 
+                    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/order_cancel_reason03"
+    	android:textColor="@color/text_main"
+    	android:textSize="@dimen/text_size_normal"
+    	android:layout_centerVertical="true"
+    	android:layout_toLeftOf="@+id/image_right03"
+    	android:layout_marginRight="5dp"
+    	android:gravity="left"
+                  />
+              
+              <ImageView 
+                  android:id="@+id/image_right03"
+                    android:layout_width="22dp"
+    	android:layout_height="22dp"
+    	android:src="@drawable/icon_checked_on"
+    	android:contentDescription="@string/app_name"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentRight="true"
+    	android:visibility="gone"
+                  />
+          </RelativeLayout>
+           <include layout="@layout/view_line_horizontal" 
+         />
+          <RelativeLayout 
+              android:id="@+id/layout_order_reason04"
+               android:layout_width="match_parent"
+    	android:layout_height="@dimen/title_bar"
+    	android:background="@drawable/selector_whitetogray_nocorner"
+    	android:paddingLeft="@dimen/margin"
+    	android:paddingRight="@dimen/margin"
+    	>
+              <TextView 
+                    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/order_cancel_reason04"
+    	android:textColor="@color/text_main"
+    	android:textSize="@dimen/text_size_normal"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentLeft="true"
+         android:layout_toLeftOf="@+id/image_right04"
+    	android:layout_marginRight="5dp"
+    	android:gravity="left"
+                  />
+              
+              <ImageView 
+                  android:id="@+id/image_right04"
+                    android:layout_width="22dp"
+    	android:layout_height="22dp"
+    	android:src="@drawable/icon_checked_on"
+    	android:contentDescription="@string/app_name"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentRight="true"
+    	android:visibility="gone"
+                  />
+          </RelativeLayout>
+           <include layout="@layout/view_line_horizontal" 
+         />
+          <RelativeLayout 
+              android:id="@+id/layout_order_reason05"
+               android:layout_width="match_parent"
+    	android:layout_height="@dimen/title_bar"
+    	android:background="@drawable/selector_whitetogray_nocorner"
+    	android:paddingLeft="@dimen/margin"
+    	android:paddingRight="@dimen/margin"
+    	>
+              <TextView 
+                    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/order_cancel_reason05"
+    	android:textColor="@color/text_main"
+    	android:textSize="@dimen/text_size_normal"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentLeft="true"
+    	android:layout_toLeftOf="@+id/image_right05"
+    	android:layout_marginRight="5dp"
+    	android:gravity="left"
+                  />
+              
+              <ImageView 
+                  android:id="@+id/image_right05"
+                    android:layout_width="22dp"
+    	android:layout_height="22dp"
+    	android:src="@drawable/icon_checked_on"
+    	android:contentDescription="@string/app_name"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentRight="true"
+    	android:visibility="gone"
+                  />
+          </RelativeLayout>
+           <include layout="@layout/view_line_horizontal" 
+         />
+          <RelativeLayout 
+              android:id="@+id/layout_order_reason06"
+               android:layout_width="match_parent"
+    	android:layout_height="@dimen/title_bar"
+    	android:background="@drawable/selector_whitetogray_nocorner"
+    	android:paddingLeft="@dimen/margin"
+    	android:paddingRight="@dimen/margin"
+    	>
+              <TextView 
+                    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/order_cancel_reason06"
+    	android:textColor="@color/text_main"
+    	android:textSize="@dimen/text_size_normal"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentLeft="true"
+    	android:layout_toLeftOf="@+id/image_right06"
+    	android:layout_marginRight="5dp"
+    	android:gravity="left"
+                  />
+              
+              <ImageView 
+                  android:id="@+id/image_right06"
+                    android:layout_width="22dp"
+    	android:layout_height="22dp"
+    	android:src="@drawable/icon_checked_on"
+    	android:contentDescription="@string/app_name"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentRight="true"
+    	android:visibility="gone"
+                  />
+          </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+    <LinearLayout
+         android:id="@+id/layout_footer"
+          android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:orientation="vertical"
+         >
+     <include layout="@layout/view_line_horizontal" 
+         />
+     
+     <LinearLayout 
+          android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <TextView 
+            android:id="@+id/btn_order_cancel_no"
+            android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_weight="1.0"
+         android:background="@drawable/selector_btn_submit_nocorner3"
+         android:text="@string/cancel"
+         android:textColor="@color/white"
+         android:textSize="@dimen/text_size_bigger"
+         android:gravity="center"
+            />
+        
+        <TextView 
+            android:id="@+id/btn_order_cancel_ok"
+            android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_weight="1.0"
+         android:background="@drawable/selector_btn_submit_nocorner"
+         android:text="@string/sure"
+         android:textColor="@color/white"
+         android:textSize="@dimen/text_size_bigger"
+          android:gravity="center"
+            />
+       
+    </LinearLayout>
+   </LinearLayout> 
+    
+</RelativeLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/activity_order_cancel_reason.xml -->

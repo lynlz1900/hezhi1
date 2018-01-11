@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/pause"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="@dimen/margin"
+        android:background="@null"
+        android:src="@null" />
+
+    <TextView
+        android:id="@+id/time_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:text="511244"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" />
+
+    <SeekBar
+        android:id="@+id/mediacontroller_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:max="1000"
+        android:maxHeight="5dp"
+        android:minHeight="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/video_seekbar"
+        android:secondaryProgress="0"
+        android:thumb="@drawable/selector_pic_video_seekar" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="511244"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" />
+
+    <ImageButton
+        android:id="@+id/is_full_screen"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:src="@drawable/icon_fullscreen" />
+
+</LinearLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/layout_media_controller.xml -->

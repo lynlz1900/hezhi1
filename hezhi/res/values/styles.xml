@@ -1,0 +1,306 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/ActivityWindowAnimTheme1</item>
+    </style>
+
+    <!-- 主题动画样式1(继承透明页面) -->
+    <style name="ActivityWindowAnimTheme1" parent="@android:style/Animation.Translucent">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <!-- 主题动画样式 -->
+    <style name="ActivityWindowAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/scale_out_center</item>
+        <item name="android:activityCloseEnterAnimation">@anim/scale_in_center</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="RadioButton" parent="CommonTextStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selector_gray_to_red</item>
+        <item name="android:background">@drawable/selector_viewpager_instruct</item>
+    </style>
+
+    <style name="RadioButton2" parent="RadioButton">
+        <item name="android:background">@drawable/selector_viewpager_instruct2</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">6dp</item>
+    </style>
+
+    <style name="CommonTextStyle">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="submiButtonStyle">
+        <item name="android:textSize">@dimen/text_size_bigger</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/title_bar</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:background">@drawable/selector_btn_submit</item>
+    </style>
+    <!-- 线性按钮 -->
+    <style name="submiLineButtonStyle">
+        <item name="android:textSize">@dimen/text_size_bigger</item>
+        <item name="android:textColor">@drawable/selector_text_font_basetowhite</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/title_bar</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:background">@drawable/selector_btn_submit_line</item>
+    </style>
+
+    <!-- Viewpager头部引导的样式左边 -->
+    <style name="ViewpagerInstructStyleLeft">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@drawable/selector_text_font_redtowhite</item>
+        <item name="android:paddingLeft">@dimen/margin</item>
+        <item name="android:paddingRight">@dimen/margin</item>
+        <item name="android:background">@drawable/selector_viewpager_instruct_left</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <!-- Viewpager头部引导的样式右边 -->
+    <style name="ViewpagerInstructStyleRight" parent="ViewpagerInstructStyleLeft">
+        <item name="android:background">@drawable/selector_viewpager_instruct_right</item>
+    </style>
+
+    <!-- Viewpager头部引导的样式中间 -->
+    <style name="ViewpagerInstructStyleCenter" parent="ViewpagerInstructStyleLeft">
+        <item name="android:background">@drawable/selector_viewpager_instruct_center</item>
+    </style>
+
+    <style name="Blue_CheckBoxStyle">
+        <item name="android:layout_height">@dimen/bottom_bar</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@drawable/selector_text_font_redtowhite</item>
+        <item name="android:paddingLeft">@dimen/margin</item>
+        <item name="android:paddingRight">@dimen/margin</item>
+        <item name="android:background">@drawable/selector_checkbox_blue</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+    <!-- Edittext样式 -->
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/v_list_heiht</item>
+        <item name="android:background">@drawable/selector_edittext</item>
+        <item name="android:textColor">@color/text_main</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@drawable/shape_editext_cursor</item>
+    </style>
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignTop="@+id/waitcomment_iv"-->
+    <!--android:layout_marginTop="-5dp"-->
+    <!--android:layout_toRightOf="@+id/waitcomment_iv"-->
+    <!--android:background="@drawable/shape_dot_red"-->
+    <!--android:gravity="center"-->
+    <!--android:minHeight="14dp"-->
+    <!--android:minWidth="14dp"-->
+    <!--android:text="112"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="10dp"-->
+    <!--android:paddingLeft="2dp"-->
+    <!--android:paddingRight="2dp"-->
+    <!-- Edittext样式 -->
+    <style name="reddotStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/shape_dot_red</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+    </style>
+
+    <!-- 下划线样式 -->
+    <style name="UnderlineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/v_list_heiht</item>
+        <item name="android:background">@drawable/selector_edittext</item>
+    </style>
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+    <!-- 显示在点击控件下方的PopupWindow中心的动画 -->
+    <style name="popwindow_anim_top_center_style">
+        <item name="android:windowEnterAnimation">@anim/scale_in_top_center</item>
+        <item name="android:windowExitAnimation">@anim/scale_out_top_center</item>
+    </style>
+
+    <!-- 显示在点击控件下方的PopupWindow的动画 -->
+    <style name="popwindow_anim_top_right_style">
+        <item name="android:windowEnterAnimation">@anim/scale_in_top_right</item>
+        <item name="android:windowExitAnimation">@anim/scale_out_top_right</item>
+    </style>
+
+    <!-- 显示在点击控件下方的PopupWindow的左边动画 -->
+    <style name="popwindow_anim_top_left_style">
+        <item name="android:windowEnterAnimation">@anim/scale_in_top_left</item>
+        <item name="android:windowExitAnimation">@anim/scale_out_top_left</item>
+    </style>
+    <!-- 显示在点击控件上方方的PopupWindow中心的动画 -->
+    <style name="popwindow_anim_buttom_center_style">
+        <item name="android:windowEnterAnimation">@anim/scale_in_buttom_center</item>
+        <item name="android:windowExitAnimation">@anim/scale_out_buttom_center</item>
+    </style>
+    <!-- 显示在点击控件上方方的PopupWindow左边的动画 -->
+    <style name="popwindow_anim_buttom_left_style">
+        <item name="android:windowEnterAnimation">@anim/scale_in_buttom_left</item>
+        <item name="android:windowExitAnimation">@anim/scale_out_buttom_left</item>
+    </style>
+    <!-- 显示在点击控件上方方的PopupWindow的动画 -->
+    <style name="popwindow_anim_buttom_right_style">
+        <item name="android:windowEnterAnimation">@anim/scale_in_buttom_right</item>
+        <item name="android:windowExitAnimation">@anim/scale_out_buttom_right</item>
+    </style>
+    <!-- 弹框dialog样式 -->
+    <style name="CustomeDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/shape_dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- 广告dialog样式 -->
+    <style name="AdDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Toast</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <!-- popwidnow从底部显示消失动画 -->
+    <style name="popwindow_anim_buttomfromparent_style">
+        <item name="android:windowEnterAnimation">@anim/timepicker_anim_enter_bottom</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/timepicker_anim_exit_bottom</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <!-- popwidnow从底部显示消失动画 -->
+    <style name="ActivityAnim">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+    </style>
+
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="StyledIndicators" parent="@style/AppTheme">
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+    </style>
+
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/selector_viewpager_instruct</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:dividerPadding">8dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@drawable/selector_tabtext</item>
+    </style>
+
+    <style name="UnityTheme" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!-- 主题不透明 ,解决videoview透明的bug -->
+    <style name="StyledIndicator1" parent="@style/AppTheme">
+        <item name="vpiTabPageIndicatorStyle">@style/noAnimation</item>
+    </style>
+
+    <style name="noAnimation" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/selector_viewpager_instruct</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:dividerPadding">8dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+        <style name="ImagePickerTheme" parent="AppBaseTheme">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ImagePickerThemeFullScreen" parent="ImagePickerTheme">
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+
+    <!--SuperCheckbox的样式-->
+    <style name="SuperCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_item_checked</item>
+    </style>
+
+    <style name="popupwindow_anim_style">
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowEnterAnimation">@anim/show_from_bottom</item>
+        <!-- 指定消失的动画xml -->
+        <item name="android:windowExitAnimation">@anim/hide_to_bottom</item>
+    </style>
+</resources>

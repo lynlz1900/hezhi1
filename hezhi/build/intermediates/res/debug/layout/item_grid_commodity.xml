@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/commodity_iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_custom"
+        android:scaleType="centerInside" 
+        android:contentDescription="@string/app_name"
+        />
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_size_normal" />
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <LinearLayout
+        android:id="@+id/layout_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin"
+        android:paddingRight="@dimen/margin"
+        android:paddingTop="0dp" 
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_body"
+             android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        >
+        <TextView
+            android:id="@+id/discountPrice_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_bigger" 
+            />
+
+        <TextView
+            android:id="@+id/costPrice_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin1"
+            android:singleLine="true"
+            android:textColor="@color/text_tutor"
+            android:textSize="10dp" 
+            />
+        </LinearLayout>
+        
+        <LinearLayout 
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="8dp"
+              >
+        <ImageView 
+            android:id="@+id/image_custom_type"
+             android:layout_width="46dp"
+            android:layout_height="13dp"
+            android:contentDescription="@string/app_name"
+            android:layout_marginRight="@dimen/margin1"
+            />
+         <TextView
+            android:id="@+id/text_succ_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:gravity="right"
+            android:textColor="@color/text_tutor"
+            android:textSize="10dp" 
+            />
+         </LinearLayout>
+    </LinearLayout>
+    
+</RelativeLayout>
+     
+</LinearLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/item_grid_commodity.xml -->

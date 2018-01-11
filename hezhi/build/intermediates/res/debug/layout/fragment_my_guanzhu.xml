@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_bar"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我的 •关注"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size_bigger" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/linecolor" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lookall_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_bar"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_whitetogray_nocorner"
+            android:drawablePadding="@dimen/margin"
+            android:drawableRight="@drawable/icon_arrow_right"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin"
+            android:paddingRight="@dimen/margin"
+            android:text="查看全部"
+            android:textColor="@color/text_tutor"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin" >
+
+        <LinearLayout
+            android:id="@+id/recomend_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_bar"
+                android:gravity="center"
+                android:text="暂无关注品牌，关注下面品牌？"
+                android:textColor="@color/text_tutor" />
+
+            <com.wukong.hezhi.ui.view.NoScrollGridview
+                android:id="@+id/horizontal_lv"
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                android:background="@color/white"
+                android:cacheColorHint="@color/transparency"
+                android:divider="@color/linecolor"
+                android:dividerHeight="0px"
+                android:listSelector="@color/transparency"
+                android:numColumns="3"
+                android:scrollbars="none" >
+            </com.wukong.hezhi.ui.view.NoScrollGridview>
+        </LinearLayout>
+
+        <com.wukong.hezhi.ui.view.NoScrollGridview
+            android:id="@+id/my_gd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@color/white"
+            android:cacheColorHint="@color/transparency"
+            android:divider="@color/linecolor"
+            android:dividerHeight="0px"
+            android:listSelector="@color/transparency"
+            android:numColumns="3"
+            android:scrollbars="none" >
+        </com.wukong.hezhi.ui.view.NoScrollGridview>
+    </FrameLayout>
+
+</LinearLayout><!-- From: file:/E:/Program%20Files/workspaece1/0HEZHI/res/layout/fragment_my_guanzhu.xml -->
